@@ -1,0 +1,25 @@
+{
+  "name": "loismarcelin_3_04042021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js --mode production",
+    "serve": "webpack --config webpack.config.js --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcelin97/LoisMarcelin_3_04042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcelin97/LoisMarcelin_3_04042021/issues"
+  },
+  "homepage": "https://github.com/Marcelin97/LoisMarcelin_3_04042021#readme",
+  "dependencies": {
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
