@@ -19,7 +19,15 @@
   },
   "homepage": "https://github.com/Marcelin97/LoisMarcelin_3_04042021#readme",
   "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "css-loader": "^5.2.1",
+    "mini-css-extract-plugin": "^1.4.1",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.10",
+    "postcss-loader": "^5.2.0",
+    "sass-loader": "^11.0.1",
     "webpack": "^5.31.2",
-    "webpack-cli": "^4.6.0"
+    "webpack-cli": "^4.6.0",
+    "webpack-remove-empty-scripts": "^0.7.1"
   }
 }
