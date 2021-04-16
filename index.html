@@ -22,13 +22,13 @@
     <!--body-->
         <header>
         <!--page header-->
-            <a href="#">
+            <a href="./index.html">
             <img 
                 src=".\assets\images\logo\ohmyfood@2x.svg"
                 alt="Le logo de Ohmyfood"
             />
             <div>
-                <i class="fas fa-map-marker-alt"></i><p>Paris, Belleville</p>
+                <p></p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
             </div>
         <!--end of page header-->
         </header>
@@ -37,20 +37,33 @@
             <section>
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélécctionnés par nos soins.</p>
-                <button>Explorer nos restaurants</button>
+                <button><a href="#restaurants"> Explorer nos restaurants</a></button>
             </section>
             <section>
+                <div>
                 <h2>Fonctionnement</h2>
-                <nav>
-                    <ol>
-                        <li><a href="#"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</a></li>
-                        <li><a href="#"><i class="fas fa-list-ul"></i>Composez votre menu</a></li>
-                        <li><a href="#"><i class="fas fa-store"></i>Dégustez au restaurant</a></li>
-                    </ol>
-                </nav>
+                    <nav>
+                        <ol>
+                            <li><a href="#">
+                                <i class="fas fa-mobile-alt"></i>
+                                Choisissez un restaurant
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                <i class="fas fa-list-ul"></i>
+                                Composez votre menu
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                <i class="fas fa-store"></i>
+                                Dégustez au restaurant
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
             </section>
-            <div>
-                <section>
+            <section id="restaurants">
                 <h2>Restaurants</h2>
                     <div>
                         <article>
@@ -59,14 +72,15 @@
                                     <img 
                                     src=".\assets\images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
                                     alt="Assiete gastronomiques avec des mains et des couverts">
+                                    <span>Nouveau</span>
                                 </figure>
-                                <div>
+                                <figcaption>
                                     <a href=".\pages\la_palette_du_gout.html">
                                         <h3>La palette du goût</h3>
                                         <p>Ménilmontant</p>
                                         <!--add icône-->
-                                    </a>
-                                </div>
+                                    </a> 
+                                </figcaption>
                             </a>
                         </article>
                         <article>
@@ -75,14 +89,15 @@
                                     <img 
                                     src=".\assets\images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg" 
                                     alt="Assiette de boulettes de viandes et tomates">
+                                    <span>Nouveau</span>
                                 </figure>
-                                <div>
+                                <figcaption>
                                     <a href=".\pages\la_note_enchantee.html">
                                         <h3>La note enchantée>
                                         <p>Charonne</p>
                                         <!--add icône-->
                                     </a>
-                                </div>
+                                </figcaption>
                             </a>
                         </article>
                         <article>
@@ -92,13 +107,13 @@
                                     src=".\assets\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg" 
                                     alt="Assiette fantaisie en gros plan">
                                 </figure>
-                                <div>
+                                <figcaption>
                                     <a href=".\pages\a_la_francaise.html">
                                         <h3>À la française<h3>
                                         <p>Cité Rouge</p>
                                         <!--add icône-->
                                     </a>
-                                </div>
+                                </figcaption>
                             </a>
                         </article>
                         <article>
@@ -108,30 +123,47 @@
                                     src=".\assets\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg" 
                                     alt="Assiette de poisson et ses petits légumes">
                                 </figure>
-                                <div>
+                                <figcaption>
                                     <a href=".\pages\le_delice_des_sens.html">
                                         <h3>Le délice des sens<h3>
                                         <p>Folie-Méricourt</p>
                                         <!--add icône-->
                                     </a>
-                                </div>
+                                </figcaption>
                             </a>
                         </article>
                     </div>
-                </section>
-            </div>     
+            </section>     
         <!--main content-->
         </main>
         <footer>
         <!--footer-->
             <div>
+                <nav>
                 <h3>Ohmyfood</h3>
-                <ul>
-                    <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                    <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
-                </ul>
+                    <div>
+                        <ul>
+                            <li><a href="#">
+                                <i class="fas fa-utensils"></i>
+                                Proposer un restaurant
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                <i class="fas fa-hands-helping"></i>
+                                Devenir partenaire
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                Mentions légales
+                                </a>
+                            </li>
+                            <li><a href="mailto:contact@ohmyfood.fr">
+                                Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         <!--end of footer-->
         </footer>
