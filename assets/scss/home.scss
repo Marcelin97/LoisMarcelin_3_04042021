@@ -2,5 +2,14 @@
 header {
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    padding-top: 25px;
+}
+header div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    & i {
+        margin-right: 15px;
+    }
 }

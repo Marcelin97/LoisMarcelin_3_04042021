@@ -1,15 +1,11 @@
 * {
     box-sizing: border-box; /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/
   }
-  section {
+section {
     padding: 25px 15px;
   }
-  
-  /*common to several elements*/
-  a {
-    text-decoration: none;
-  }
-  img {
-    -o-object-fit: cover;
+
+img {
        object-fit: cover;
+       width: 15em;
   }
