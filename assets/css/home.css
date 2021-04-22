@@ -1,4 +1,176 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{font-family:'Roboto', Verdana, Geneva, Tahoma, sans-serif;color:black;font-size:1em}h1{font-family:'Shrikhand', Verdana, Geneva, Tahoma, sans-serif}a{text-decoration:none}*{box-sizing:border-box}section{padding:25px 15px}img{-o-object-fit:cover;object-fit:cover;width:15em}footer nav{background-color:#353535}header{background-color:#fff}header div{background-color:#eaeaea}header{display:flex;flex-direction:column;align-items:center;padding-top:25px}header div{display:flex;align-items:center;width:100%}header div i{margin-right:15px}
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 1em; }
+
+a {
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box;
+  /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/ }
+
+section {
+  padding: 25px 15px; }
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 9em; }
+
+footer nav {
+  background-color: #353535; }
+
+header {
+  background-color: #ffffff; }
+
+header div {
+  background-color: #eaeaea; }
+
+/*header*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px; }
+
+header a img {
+  padding-bottom: 15px;
+  width: 150px; }
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea; }
+  header div i {
+    margin-right: 15px; }
+  header div p {
+    color: a6a6a6;
+    font-size: 1em;
+    font-weight: 700; }
+
+/*end of header*/
+/*reservation*/
+#reservation {
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  height: 250px; }
+  #reservation h1 {
+    font-weight: 700; }
+  #reservation p {
+    font-size: 0.5em;
+    font-weight: 300;
+    padding: 20px; }
+
+#reservation a {
+  background: linear-gradient(360deg, #d56bda 70%, pink 100%);
+  color: white;
+  font-size: 0.5em;
+  border-radius: 25px;
+  line-height: 40px;
+  width: 210px;
+  display: flex;
+  align-self: center;
+  justify-content: center; }
+
+/*end of reservation*/
+/*fonction*/
+#fonction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white; }
+  #fonction h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 30px; }
+
+#fonction ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 8px;
+  counter-reset: li; }
+
+#fonction li {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 300px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 6px 8px #e7e7e7;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  transition-duration: 600ms; }
+  #fonction li:hover {
+    transition-duration: 600ms;
+    background: #f5edff; }
+    #fonction li:hover i {
+      transition-duration: 600ms;
+      color: #9356DC; }
+  #fonction li a {
+    display: flex;
+    width: 100%;
+    margin-left: 20px; }
+
+#fonction i {
+  color: #7e7e7e;
+  margin-right: 15px; }
+
+/*end of fonction*/
 

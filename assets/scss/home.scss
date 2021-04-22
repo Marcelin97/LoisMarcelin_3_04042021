@@ -1,15 +1,111 @@
 @import "./main.scss";
+
+/*header*/
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 25px;
 }
+header a img {
+    padding-bottom: 15px;
+    width: 150px;
+}
 header div {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    & i {
-        margin-right: 15px;
-    }
+    height: 50px;
+    background-color: $light-grey;
+        & i {
+            margin-right: 15px;
+        }
+            & p {
+                color: $medium-grey;
+                font-size: 1em;
+                font-weight: 700;
+            }
 }
+
+/*end of header*/
+/*reservation*/
+
+#reservation {
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-medium-grey;
+    height: 250px;
+        & h1 {
+            font-weight: 700;        
+        }
+            & p {
+                font-size: 0.5em;
+                font-weight: 300;  
+                padding: 20px;  
+            }
+}
+#reservation a {
+    background:linear-gradient(360deg, $btn-purple 70%, pink 100%);
+    color: white;
+    font-size: 0.5em;
+    border-radius: 25px;
+    line-height: 40px;
+    width: 210px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+/*end of reservation*/
+/*fonction*/
+#fonction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $white;
+        & h3 {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+}
+#fonction ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8px;
+    counter-reset: li;
+}
+#fonction li {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+    background-color:$bg-medium-grey;
+    box-shadow: 0px 6px 8px $shadow;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition-duration: 600ms;
+        &:hover {
+            transition-duration: 600ms;
+            background: $hover-color;
+                i {
+                    transition-duration: 600ms;
+                    color: $primary-color;
+                }
+        }
+            & a {
+                display: flex;
+                width: 100%;
+                margin-left: 20px;
+            } 
+}
+#fonction i {
+    color: $icone-color;
+    margin-right: 15px;
+}
+
+/*end of fonction*/
