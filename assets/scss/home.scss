@@ -61,11 +61,12 @@ header div {
 
 /*end of reservation*/
 /*fonction*/
+
 #fonction {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $white;
+    background-color:$off-white-color;
         & h3 {
             font-weight: bold;
             font-size: 1.5em;
@@ -84,7 +85,7 @@ header div {
     align-items: center;
     height: 60px;
     width: 300px;
-    background-color:$bg-medium-grey;
+    background-color: $bg-medium-grey;
     box-shadow: 0px 6px 8px $shadow;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -109,3 +110,51 @@ header div {
 }
 
 /*end of fonction*/
+/*restaurants*/
+
+#restaurants {
+  background-color: $bg-medium-grey;
+  display: flex;
+  flex-direction: column;
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 30px 0px 15px 15px;
+    }
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        height: 240px;
+        box-shadow: 0px 5px 5px $shadow;
+        border-radius: 15px;
+          figure {
+            display: flex;
+            flex-direction: column;
+            height: 70%;
+              a {
+                height: 100%;
+                position: relative;
+                  img {
+                    border-radius: 15px 15px 0 0;
+                    max-height: 100%;
+                  }
+                  span {
+                    position: absolute;
+                    top: 2px;
+                    right: 100px;
+                    display: flex;
+                    align-items: center;
+                    background-color: $tertiary-color;
+                    color: $dark-green;
+                    font-weight: bold;
+                    height: 30px;
+                    font-size: 0.9em;
+                    padding: 0 10px;
+                    margin-top: 15px;
+                  }
+              }
+          }
+      }
+}
