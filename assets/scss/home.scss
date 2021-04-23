@@ -44,7 +44,8 @@ header div {
             & p {
                 font-size: 0.5em;
                 font-weight: 300;  
-                padding: 20px;  
+                padding: 20px;
+                flex-wrap: wrap;  
             }
 }
 #reservation a {
@@ -78,7 +79,6 @@ header div {
     flex-direction: column;
     align-items: center;
     margin-left: 8px;
-    counter-reset: li;
 }
 #fonction li {
     display: flex;
@@ -124,7 +124,6 @@ header div {
       article {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin: 10px 0;
         height: 240px;
         box-shadow: 0px 5px 5px $shadow;
@@ -132,7 +131,7 @@ header div {
           figure {
             display: flex;
             flex-direction: column;
-            height: 70%;
+            height: 75%;
               a {
                 height: 100%;
                 position: relative;
@@ -143,18 +142,37 @@ header div {
                   span {
                     position: absolute;
                     top: 2px;
-                    right: 100px;
+                    right: 10px;
+                    margin-top: 15px;
                     display: flex;
                     align-items: center;
                     background-color: $tertiary-color;
                     color: $dark-green;
                     font-weight: bold;
-                    height: 30px;
-                    font-size: 0.9em;
-                    padding: 0 10px;
-                    margin-top: 15px;
+                    height: 25px;
+                    font-size: 0.8em;
+                    padding: 10px;
                   }
               }
           }
+          div {
+              height: 100%;
+              display: flex;
+                a {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                h3 {
+                    font-weight: bold;
+                    padding-bottom: 7px;
+                }
+                p {
+                    font-size: 0.9em;
+                    font-weight:300;
+                }
+          }
       }
 }
+/*end of restaurants*/
