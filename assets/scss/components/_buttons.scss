@@ -1,0 +1,10 @@
+.btn {
+    background:linear-gradient(360deg, $btn-purple 70%, pink 100%);
+    color: white;
+    border-radius: 25px;
+    line-height: 40px;
+    width: 210px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
