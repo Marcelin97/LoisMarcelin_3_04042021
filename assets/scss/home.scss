@@ -18,16 +18,16 @@ header div {
     width: 100%;
     height: 50px;
     background-color: $light-grey;
-    i,p {
-        color: $footer-grey;
-    }
-        i {
-            margin-right: 15px;
+        i,p {
+            color: $dark-grey;
         }
-            p {
-                color: $medium-grey;
-                font-weight: 700;
+            i {
+                margin-right: 15px;
             }
+                p {
+                    color: $medium-grey;
+                    font-weight: 700;
+                }
 }
 
 /*end of header*/
@@ -79,6 +79,12 @@ header div {
     margin-bottom: 20px;
     border-radius: 15px;
     transition-duration: 600ms;
+    counter-increment: steps;
+    position: relative;
+        &::before {
+            content: counter(steps);
+            position: absolute;
+        }
         &:hover {
             transition-duration: 600ms;
             background: $hover-color;
