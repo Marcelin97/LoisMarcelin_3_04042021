@@ -9,8 +9,7 @@ footer nav {
             font-weight: 500;
             padding-bottom: 15px;
                 @media only screen and (min-width: 768px){
-                    padding-bottom: 90px;
-                    font-size: 3em;
+                    font-size: 2em;
                     text-align: center;
                 }
         }
@@ -19,14 +18,13 @@ footer nav {
                             display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
-                            height: 109px;
                             justify-content: center;
                         }
                     li {
                         padding-bottom: 8px;
                             @media only screen and (min-width: 768px) {
                                 margin-right: 45px;  
-                                font-size: 1.3em;
+                                font-size: 1.2em;
                             }
                         a {
                             color: $white;
