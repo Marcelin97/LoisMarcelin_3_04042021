@@ -1,6 +1,39 @@
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
     background-color: white;
+        a {
+            img {
+            padding-bottom: 15px;
+                @media only screen and (min-width: 768px) {
+                    height: 70px;
+                }
+            }
+        }
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+            background-color: $grey;        
+                i,p {
+                    color: $dark-grey;
+                }
+                    i {
+                        margin-right: 15px;
+                        margin-bottom: 3px;
+                    }
+                        p {
+                            font-weight: bold;
+                            @media only screen and (min-width:768px) {
+                                font-size: 1.1em;
+                            }
+                        }
+        }
 }
-header div {
-    background-color: $light-grey;
-}
+
+
+

@@ -1,44 +1,13 @@
 @import "./main.scss";
 
-/*header*/
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 25px;
-}
-header a img {
-    padding-bottom: 15px;
-    width: 150px;
-}
-header div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50px;
-    background-color: $light-grey;
-        i,p {
-            color: $dark-grey;
-        }
-            i {
-                margin-right: 15px;
-            }
-                p {
-                    color: $medium-grey;
-                    font-weight: 700;
-                }
-}
-
-/*end of header*/
 /*reservation*/
 
 #reservation {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: $bg-medium-grey;
-    height: 250px;
+    background-color: $light-grey;
+    height: 210px;
         h1 {
             font-weight: 700;
             font-size: 1.6em;        
@@ -56,73 +25,112 @@ header div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:$off-white-color;
-        & h3 {
+    background-color: $white;
+        h3 {
             font-weight: bold;
             font-size: 1.5em;
             margin-bottom: 30px;
+            margin-top: 25px;
+                @media only screen and (min-width: 768px){
+                    flex-basis: 100%;
+                    margin-left: 55px;
+                }
         }
 }
 #fonction ol {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-left: 8px;
-}
-#fonction li {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    width: 300px;
-    background-color: $bg-medium-grey;
-    box-shadow: 0px 6px 8px $shadow;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    transition-duration: 600ms;
-    counter-increment: steps;
-    position: relative;
-        &::before {
-            content: counter(steps);
-            position: absolute;
+        @media only screen and (min-width: 350px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                    li{
+                        margin-right: 30px;
+                    }
         }
-        &:hover {
+        li {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            width: 300px;
+            background-color: $light-grey;
+            box-shadow: 0px 6px 8px $shadow;
+            margin-bottom: 20px;
+            border-radius: 15px;
             transition-duration: 600ms;
-            background: $hover-color;
-                i {
-                    transition-duration: 600ms;
-                    color: $primary-color;
+            counter-increment: steps;
+            position: relative;
+                &::before {
+                    content: counter(steps);
+                    position: absolute;
+                    line-height: 1.7em;
+                    width: 1.7em;
+                    height: 1.7em;
+                    border-radius: 15px;
+                    min-width: 1.7em;
+                    left: -1em;
+                    color: white;
+                    text-align: center;
+                    background-color: $primary-color;
                 }
-        }
-            & a {
+                        &:hover {
+                            transition-duration: 600ms;
+                            background: $light-purple;
+                                i {
+                                    transition-duration: 600ms;
+                                    color: $primary-color;
+                                }
+                        }
+            a {
                 display: flex;
                 width: 100%;
-                margin-left: 20px;
+                margin-left: 30px;
+                    i {
+                        color: $grey-grey;
+                        margin-right: 15px;
+                    }
+                    p {
+                        font-weight: bold;
+                    }
             } 
-}
-#fonction i {
-    color: $icone-color;
-    margin-right: 15px;
+        }    
+            
 }
 
 /*end of fonction*/
 /*restaurants*/
 
 #restaurants {
-  background-color: $bg-medium-grey;
+  background-color: $light-grey;
   display: flex;
   flex-direction: column;
+            @media only screen and (min-width: 768px) {
+                    flex-flow: row wrap;
+                    justify-content: center;
+            }
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.5em;
       font-weight: bold;
-      padding: 30px 0px 15px 15px;
+      padding: 25px 0px 10px 0px;
+        @media only screen and (min-width: 768px){
+            flex-basis: 100%;
+            margin-left: 55px;
+        }
     }
       article {
         display: flex;
         flex-direction: column;
-        margin: 10px 0;
+        margin: 10px 0px;
         height: 240px;
         box-shadow: 0px 5px 5px $shadow;
         border-radius: 15px;
+            @media only screen and (min-width: 768px) {
+                flex-flow: row wrap;
+                height: 300px;
+                flex-basis: 44%;
+                margin: 20px;                
+            }
           figure {
             display: flex;
             flex-direction: column;
@@ -131,16 +139,18 @@ header div {
                 height: 100%;
                 position: relative;
                   img {
-                    border-radius: 15px 15px 0 0;
+                    border-radius: 15px 15px 0px 0px;
                     max-height: 100%;
                     object-fit: cover;
                     width: 100%;
-                    border-radius: 15px;
                     object-position: 50% 65%;
+                        @media screen and (min-width:768px) {
+                            height:max-content;
+                        }
                   }
                   span {
                     position: absolute;
-                    top: 2px;
+                    top: -3px;
                     right: 10px;
                     margin-top: 15px;
                     display: flex;
@@ -151,6 +161,7 @@ header div {
                     height: 25px;
                     font-size: 0.8em;
                     padding: 10px;
+                    border-radius: 2px;
                   }
               }
           }
@@ -158,18 +169,16 @@ header div {
               height: 100%;
               display: flex;
                 a {
-                    height: 100%;
-                    display: flex;
                     flex-direction: column;
                     padding: 10px;
-                }
-                h3 {
-                    font-weight: bold;
-                    padding-bottom: 7px;
-                }
-                p {
-                    font-size: 0.9em;
-                    font-weight:300;
+                    h3 {
+                        font-weight: bold;
+                        padding-bottom: 7px;
+                    }
+                    p {
+                        font-size: 0.9em;
+                        font-weight:300;
+                    }
                 }
           }
       }
