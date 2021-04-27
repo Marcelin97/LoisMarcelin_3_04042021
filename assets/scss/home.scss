@@ -3,9 +3,8 @@
 /*reservation*/
 
 #reservation {
+    @include dflex_col;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     background-color: $light-grey;
     height: 210px;
         h1 {
@@ -22,8 +21,7 @@
 /*fonction*/
 
 #fonction {
-    display: flex;
-    flex-direction: column;
+    @include dflex_col;
     justify-content: center;
     background-color: $white;
         h3 {
@@ -38,8 +36,7 @@
         }
 }
 #fonction ol {
-    display: flex;
-    flex-direction: column;
+    @include dflex_col;
     margin-left: 8px;
     
         @media only screen and (min-width: 350px) {
@@ -104,8 +101,7 @@
 
 #restaurants {
   background-color: $light-grey;
-  display: flex;
-  flex-direction: column;
+  @include dflex_col;
             @media only screen and (min-width: 768px) {
                     flex-flow: row wrap;
                     justify-content: center;
@@ -120,8 +116,7 @@
         }
     }
       article {
-        display: flex;
-        flex-direction: column;
+        @include dflex_col;
         margin: 10px 0px;
         height: 240px;
         box-shadow: 0px 5px 5px $shadow;
@@ -132,8 +127,7 @@
                 margin: 20px;                
             }
           figure {
-            display: flex;
-            flex-direction: column;
+            @include dflex_col;
             height: 75%;
               a {
                 position: relative;
@@ -166,9 +160,8 @@
               }
           }
           div {
-              display: flex;
+              @include dflex_col;
                 a {
-                    flex-direction: column;
                     padding: 10px;
                     h3 {
                         font-weight: bold;
