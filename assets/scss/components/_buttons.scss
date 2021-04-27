@@ -7,4 +7,14 @@
     display: flex;
     align-self: center;
     justify-content: center;
+    box-shadow: 2px 6px 9px #c3c3c3;
+    cursor: pointer;
+    transform: scale(1);
+    transition-duration: 800ms;
+        &:hover {
+            box-shadow: 3px 6px 9px $primary-color;
+            transform: scale(1.1);
+            transition: all 700ms;
+            border-radius: 23px;            
+        }
 }

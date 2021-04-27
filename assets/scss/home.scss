@@ -12,7 +12,7 @@
             font-size: 1.6em;        
         }
             p {
-                font-weight: 300;  
+                font-weight: 200;  
                 padding: 20px;
             }
 }
@@ -31,7 +31,6 @@
             margin-top: 25px;
                 @media only screen and (min-width: 768px){
                     flex-basis: 100%;
-                    margin-left: 55px;
                 }
         }
 }
@@ -45,6 +44,12 @@
                 justify-content: center;
                     li{
                         margin-right: 30px;
+                        flex: 1 0 45%;
+                        @media only screen and (min-width: 768px) {
+                            flex: 1 1;
+                            margin-left: 5px;
+                        }
+
                     }
         }
         li {
