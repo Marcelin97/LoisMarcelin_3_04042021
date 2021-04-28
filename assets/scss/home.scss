@@ -27,8 +27,7 @@
         h3 {
             font-weight: bold;
             font-size: 1.5em;
-            margin-bottom: 30px;
-            margin-top: 25px;
+            margin: 20px 0px 20px 5px;
                 @media only screen and (min-width: 768px){
                     flex-basis: 100%;
                 }
@@ -36,27 +35,21 @@
 }
 #fonction ol {
     @include dflex_col;
-    margin-left: 8px;
-    
         @media only screen and (min-width: 350px) {
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: center;
                     li{
-                        margin-right: 30px;
                         flex: 1 0 45%;
+                        margin-left: 20px;
                         @media only screen and (min-width: 768px) {
                             flex: 1 1;
-                            margin-left: 5px;
                         }
-
                     }
         }
         li {
             display: flex;
             align-items: center;
             height: 60px;
-            width: 300px;
             background-color: $light-grey;
             box-shadow: 0px 6px 8px $shadow;
             margin-bottom: 20px;
@@ -109,27 +102,25 @@
   @include dflex_col;
             @media only screen and (min-width: 768px) {
                     flex-flow: row wrap;
-                    justify-content: center;
             }
     h2 {
       font-size: 1.5em;
       font-weight: bold;
-      padding: 25px 0px 10px 0px;
+      margin: 20px 0px 20px 5px;
         @media only screen and (min-width: 768px){
             flex-basis: 100%;
-            margin-left: 55px;
         }
     }
       article {
         @include dflex_col;
         margin: 10px 0px;
-        height: 240px;
+        height: 250px;
         box-shadow: 0px 5px 5px $shadow;
         border-radius: 15px;
             @media only screen and (min-width: 768px) {
-                height: 300px;
-                flex-basis: 44%;
-                margin: 20px;                
+                height: 290px;
+                flex-basis: 49%;
+                margin: 10px auto;                
             }
           figure {
             @include dflex_col;
@@ -143,9 +134,6 @@
                     object-fit: cover;
                     width: 100%;
                     object-position: 50% 65%;
-                        @media screen and (min-width:768px) {
-                            height:max-content;
-                        }
                   }
                   span {
                     position: absolute;
