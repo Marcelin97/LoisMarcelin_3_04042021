@@ -1,15 +1,16 @@
 footer nav {
     background-color:$dark-grey;
     @include dflex_col;
-    padding: 20px;
+    padding: 25px 15px;
         h3 {
             color: $white;
             font-family: 'Shrikhand';
             font-weight: 500;
             padding-bottom: 15px;
-
+            margin-left: 5px;
         }
                 ul {
+                    margin-left: 5px;
                     li {
                         padding-bottom: 8px;
                         a {
