@@ -9,7 +9,8 @@
     height: 210px;
         h1 {
             font-weight: 700;
-            font-size: 1.6em;        
+            font-size: 1.6em;
+            margin: 0 auto;        
         }
             p {
                 font-weight: 200;  
@@ -21,42 +22,48 @@
 /*fonction*/
 
 #fonction {
-    @include dflex_col;
     justify-content: center;
     background-color: $white;
+        @media only screen and (min-width:992px){
+            margin: 0 auto;
+            max-width: 1200px;
+    }
         h3 {
             font-weight: bold;
             font-size: 1.5em;
             margin: 20px 0px 20px 5px;
-                @media only screen and (min-width: 768px){
-                    flex-basis: 100%;
-                }
+            flex-basis: 100%;
         }
 }
 #fonction ol {
     @include dflex_col;
-        @media only screen and (min-width: 350px) {
-                flex-direction: row;
-                flex-wrap: wrap;
-                    li{
-                        flex: 1 0 45%;
-                        margin-left: 20px;
-                        @media only screen and (min-width: 768px) {
-                            flex: 1 1;
-                        }
-                    }
+    align-items: center;
+    flex-basis: 100%;
+    row-gap: 30px;
+    padding-left: 10px;
+        @media only screen and (min-width: 576px) {
+                li {
+                    min-width: 280px;
+                    max-width: 300px;
+                    margin: 0 auto; 
+                }
+                @media only screen and (min-width: 992px){
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
         }
         li {
             display: flex;
             align-items: center;
             height: 60px;
+            width: 60%;
             background-color: $light-grey;
             box-shadow: 0px 6px 8px $shadow;
-            margin-bottom: 20px;
             border-radius: 15px;
             transition-duration: 600ms;
             counter-increment: steps;
             position: relative;
+            margin: 0 auto;
                 &::before {
                     content: counter(steps);
                     position: absolute;
@@ -78,6 +85,7 @@
                                     color: $primary-color;
                                 }
                         }
+                
             a {
                 display: flex;
                 width: 100%;
@@ -100,14 +108,16 @@
 #restaurants {
   background-color: $light-grey;
   @include dflex_col;
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: 992px) {
                     flex-flow: row wrap;
+                    margin: 0 auto; 
+
             }
     h2 {
       font-size: 1.5em;
       font-weight: bold;
       margin: 20px 0px 20px 5px;
-        @media only screen and (min-width: 768px){
+        @media only screen and (min-width: 992px){
             flex-basis: 100%;
         }
     }
@@ -117,7 +127,7 @@
         height: 250px;
         box-shadow: 0px 5px 5px $shadow;
         border-radius: 15px;
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: 992px) {
                 height: 290px;
                 flex-basis: 49%;
                 margin: 10px auto;                
