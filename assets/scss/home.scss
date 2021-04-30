@@ -5,8 +5,9 @@
 #reservation {
     @include dflex_col;
     text-align: center;
+    flex-wrap: wrap;
     background-color: $light-grey;
-    height: 210px;
+    padding-bottom: 50px;
         h1 {
             font-weight: 700;
             font-size: 1.6em;
@@ -24,10 +25,12 @@
 #fonction {
     justify-content: center;
     background-color: $white;
-        @media only screen and (min-width:992px){
-            margin: 0 auto;
-            max-width: 1200px;
-    }
+        > div {
+            @media only screen and (min-width:992px){
+                margin: 0 auto;
+                max-width: 1100px;
+            }
+        }
         h3 {
             font-weight: bold;
             font-size: 1.5em;
@@ -40,7 +43,6 @@
     align-items: center;
     flex-basis: 100%;
     row-gap: 30px;
-    padding-left: 10px;
         @media only screen and (min-width: 576px) {
                 li {
                     min-width: 280px;
@@ -107,12 +109,14 @@
 
 #restaurants {
   background-color: $light-grey;
-  @include dflex_col;
+    > div {
+        @include dflex_col;
             @media only screen and (min-width: 992px) {
-                    flex-flow: row wrap;
-                    margin: 0 auto; 
-
+                flex-flow: row wrap;
+                margin: 0 auto;
+                max-width: 1100px;
             }
+
     h2 {
       font-size: 1.5em;
       font-weight: bold;
@@ -177,5 +181,6 @@
                 }
           }
       }
+    }  
 }
 /*end of restaurants*/

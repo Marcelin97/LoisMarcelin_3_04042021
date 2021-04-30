@@ -1,7 +1,13 @@
-footer nav {
+footer {
     background-color:$dark-grey;
+}
+footer nav {
     @include dflex_col;
     padding: 25px 15px;
+    @media only screen and (min-width:992px){
+        margin: 0 auto;
+        max-width: 1100px;
+    }
         h3 {
             color: $white;
             font-family: 'Shrikhand';
