@@ -11,10 +11,4 @@
     cursor: pointer;
     transform: scale(1);
     transition-duration: 800ms;
-        &:hover {
-            filter: drop-shadow(4px 8px 8px $primary-color);
-            transform: scale(1.1);
-            transition: all 700ms ease-in-out;
-            border-radius: 23px;  
-        }
 }
