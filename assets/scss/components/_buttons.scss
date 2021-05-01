@@ -1,0 +1,14 @@
+.btn {
+    background:linear-gradient(175deg, $secondary-color, $primary-color);
+    color: white;
+    border-radius: 25px;
+    line-height: 50px;
+    width: 210px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    filter: drop-shadow(2px 6px 5px #cfcfcf);
+    cursor: pointer;
+    transform: scale(1);
+    transition-duration: 800ms;
+}
