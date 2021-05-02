@@ -1,5 +1,8 @@
 @import "./main.scss";
 
+section {
+    padding: 25px 15px 0px 15px;
+}
  header {
      display: flex;
      flex-direction: row;
@@ -64,13 +67,14 @@ figure {
             font-size: 1.5em;
             margin-top: 10px;
             font-family: 'Shrikhand', sans-serif;
+            padding-left: 10px;
         }
         .heart{
             margin-top: 5px;
             line-height: 2em;
+            margin-right: 20px;
                 i{
-                    font-size: 1.2em;
-
+                    font-size: 1.3em;
                 }
         }
  }
@@ -78,10 +82,10 @@ figure {
      display: flex;
      flex-direction: column;
      width: 100%;
-     padding: 20px;
         h2 {
             text-transform: uppercase;
-                &::after{
+            padding-left: 10px;
+                &::after{ //surligne le titre en vert
                     content: "";
                     display: flex;
                     width: 40px;
@@ -100,7 +104,7 @@ figure {
     flex-wrap: wrap;
     justify-content: space-between;
     height: 80px;
-    box-shadow: 0px 3px 8px #e5e5e5;
+    box-shadow: 0px 3px 8px $shadow;
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
@@ -132,8 +136,20 @@ figure {
         margin-bottom: 20px;
         justify-content: right;
     }
-    
+//common to several element  
+}
+#menu_starter, #menu_dish, #menu_dessert {
+    padding-right: 0;
+    padding-left: 0;
 }
 
+//button
+.btn {
+    margin-top: 35px;
+    margin-bottom: 80px;
+}
 
-
+//footer
+footer nav {
+    max-width: 992px;
+}
