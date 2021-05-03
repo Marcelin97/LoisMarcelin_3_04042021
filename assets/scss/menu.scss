@@ -1,8 +1,7 @@
 @import "./main.scss";
 
-section {
-    padding: 25px 15px 0px 15px;
-}
+//header
+
  header {
      display: flex;
      flex-direction: row;
@@ -11,8 +10,8 @@ section {
      padding-top: 15px;
      position: relative;
         a{
-            i {
-                color: #5a5a5a;
+            i { //flèche retour
+                color: $dark-grey;
                 font-size: 1.3em;
                 left: 5%;
                 position: absolute;
@@ -53,6 +52,10 @@ figure {
         }
     }
  }
+
+ //end of header
+ //menu
+
  #menu {
     max-width: 992px;
     margin: 0 auto;
@@ -70,7 +73,7 @@ figure {
             font-family: 'Shrikhand', sans-serif;
             padding-left: 10px;
         }
-        .heart{
+        > span{ //heart
             margin-top: 5px;
             line-height: 2em;
             margin-right: 20px;
@@ -86,7 +89,7 @@ figure {
         h2 {
             text-transform: uppercase;
             padding-left: 10px;
-                &::after{ //surligne le titre en vert
+                &::after{ //souligne le titre en vert
                     content: "";
                     display: flex;
                     width: 40px;
@@ -102,17 +105,16 @@ figure {
     border-radius: 20px;
     margin-bottom: 15px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     height: 80px;
     box-shadow: 0px 3px 8px $shadow;
     padding-left: 15px;
     padding-right: 15px;
-    width: 100%;
+    position: relative;
         div{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
             height: 100%;
             min-width: 0;
                 h3 {
@@ -121,6 +123,7 @@ figure {
                     text-overflow: ellipsis; 
                     overflow: hidden; 
                     white-space: nowrap;
+                    width: 100%;
                 }
                 p {
                     margin-top: 5px;
@@ -129,28 +132,39 @@ figure {
                     text-overflow: ellipsis; 
                     overflow: hidden; 
                     white-space: nowrap;
+                    width: 100%;
                 }
         }
-    span {
-        display: flex;
-        align-items: flex-end;
+    span { //price
         margin-bottom: 20px;
-        justify-content: right;
+        overflow: visible;
+        position: relative;
+        top: 50px;
     }
-//common to several element  
 }
+
+//common to several element  
 #menu_starter, #menu_dish, #menu_dessert {
     padding-right: 0;
     padding-left: 0;
 }
+section {
+    padding: 25px 15px 0px 15px;
+}
 
+//common to several element
 //button
+
 .btn {
     margin-top: 35px;
     margin-bottom: 80px;
 }
 
+//end of button
 //footer
+
 footer nav {
     max-width: 992px;
 }
+
+//end of footer
