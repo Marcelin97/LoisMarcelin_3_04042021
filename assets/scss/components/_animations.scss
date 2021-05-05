@@ -3,17 +3,32 @@
     from{
       opacity: 1;
       transform: translateY(50px);
-      color: yellow;
+      color: $primary-color;
     }
     to{
       opacity: 0;
       transform: translateY(0);
-      color: green;
+      color: $tertiary-color;
     }
   }
   @keyframes hidden {
     to {
       visibility: hidden;
+    }
+  }
+  
+  @keyframes pulseBorder{
+    0%{
+      border: 2px double $primary-color;
+      border-radius: 10px;
+    }
+    50%{
+      border: 2px double $secondary-color;
+      border-radius: 50px;
+    }
+    100%{
+      border: 2px double $tertiary-color;
+      border-radius: 10px;
     }
   }
   
