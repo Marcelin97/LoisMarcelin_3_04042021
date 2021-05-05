@@ -1,0 +1,19 @@
+
+  @keyframes bubble{
+    from{
+      opacity: 1;
+      transform: translateY(50px);
+      color: yellow;
+    }
+    to{
+      opacity: 0;
+      transform: translateY(0);
+      color: green;
+    }
+  }
+  @keyframes hidden {
+    to {
+      visibility: hidden;
+    }
+  }
+  

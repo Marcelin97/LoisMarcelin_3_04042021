@@ -1,5 +1,87 @@
 @import "./main.scss";
 
+#spinner_loader {
+    width:100vw;
+    height:100vh;
+    background-color:$tertiary-color;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation: hidden 4s forwards;
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 50px;
+            height: 100px;
+            width: 100px;
+        }
+        .fa-utensils {
+            position: absolute;
+            top: -60px;
+            animation: bubble 1.5s cubic-bezier(.39,.575,.28,.995) infinite;
+            font-size: 1.4rem;
+        }
+        .fa-ice-cream {
+            position: absolute;
+            left: -20px;
+            top: 0;
+            animation: bubble 2.2s cubic-bezier(.39,.575,.28,.995) infinite;
+        }
+        .fa-cheese {
+            position: absolute;
+            top: 40px;
+            left: -20px;
+            animation: bubble 1.8s cubic-bezier(.39,.575,.28,.995) infinite;
+            font-size: 1.4rem;
+        }
+        .fa-bacon {
+            position: absolute;
+            top: 80px;
+            left: -40px;
+            animation: bubble 1.3s cubic-bezier(.39,.575,.28,.995) infinite;
+        }
+        .fa-cocktail {
+            position: absolute;
+            bottom: 10px;
+            animation: bubble 2.4s cubic-bezier(.39,.575,.28,.995) infinite;
+            font-size: 1.4rem;
+        }
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 10px;
+            border: 5px double $primary-color;
+        }
+        .fa-coffe {
+            position: absolute;
+            right: -40px;
+            animation: bubble 1.6s cubic-bezier(.39,.575,.28,.995) infinite;
+        }
+        .fa-wine-bottle {
+            position: absolute;
+            top: -50px;
+            right: -30px;
+            animation: bubble 1.9s cubic-bezier(.39,.575,.28,.995) infinite;
+        }
+        .fa-glass-cheers {
+            position: absolute;
+            top: 30px;
+            animation: bubble 2.1s cubic-bezier(.39,.575,.28,.995) infinite;
+            font-size: 1.4rem;
+        }
+        .fa-hamburger {
+            position: absolute;
+            top: 100px;
+            animation: bubble 1.7s cubic-bezier(.39,.575,.28,.995) infinite;
+        }
+}
+
+
+
+
 /*reservation*/
 
 #reservation {
