@@ -1,23 +1,35 @@
+//spinner loading
 
-  @keyframes bubble{
+@keyframes hidden{
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75%{
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.1;
+    visibility: hidden;
+  }
+}
+
+@keyframes bubble{
     from{
       opacity: 1;
       transform: translateY(50px);
-      color: $primary-color;
+      color: $tertiary-color;
     }
     to{
       opacity: 0;
       transform: translateY(0);
-      color: $tertiary-color;
+      color: $secondary-color;
     }
-  }
-  @keyframes hidden {
-    to {
-      visibility: hidden;
-    }
-  }
+}
   
-  @keyframes pulseBorder{
+@keyframes pulseBorder{
     0%{
       border: 2px double $primary-color;
       border-radius: 10px;
@@ -30,5 +42,6 @@
       border: 2px double $tertiary-color;
       border-radius: 10px;
     }
-  }
-  
+}
+
+//spinner loading
