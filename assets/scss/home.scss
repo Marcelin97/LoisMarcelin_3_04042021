@@ -6,13 +6,14 @@
         width: 30px;
         position: absolute;
         right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 20%;
+        transform: translateY(-20%);
 
-            &.heart_plain {
+            &.heart_plain { //coeur plein
                 opacity:0;
+                position: relative;
             }
-            &.heart_plain1{
+            &.heart_plain1{//les petits coeurs * 4
                 right: 25px;
                 top: 10%;
                 width: 10px;
@@ -35,13 +36,14 @@
                 top: 5%;
                 width: 10px;
                 opacity: 0;
-                
             }
     }
     &:hover {
         svg{
             &.heart_plain{
                 opacity: 1;
+                animation: heartbeat 1s ease-in-out infinite;
+                position: absolute;
             }
             &.heart_border {
                 opacity: 0;
@@ -76,7 +78,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    animation: hidden 0s ease-in-out forwards;
+    animation: hidden 4s ease-in-out forwards;
     position: fixed;
     z-index: 9999;
     top : 0px;
