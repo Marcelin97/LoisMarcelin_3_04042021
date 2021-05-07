@@ -1,0 +1,51 @@
+//spinner loading
+
+@keyframes hidden{
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes bubble{
+    from{
+      opacity: 1;
+      transform: translateY(50px);
+      color: $tertiary-color;
+    }
+    to{
+      opacity: 0;
+      transform: translateY(0);
+      color: $secondary-color;
+    }
+}
+  
+@keyframes pulseBorder{
+    0%{
+      border: 2px double $primary-color;
+      border-radius: 10px;
+    }
+    50%{
+      border: 2px double $secondary-color;
+      border-radius: 50px;
+    }
+    100%{
+      border: 2px double $tertiary-color;
+      border-radius: 10px;
+    }
+}
+
+//spinner loading
+//heart
+
+@keyframes heartpulse {
+  
+}
+
+//heart
