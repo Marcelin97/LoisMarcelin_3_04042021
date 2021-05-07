@@ -1,5 +1,72 @@
 @import "./main.scss";
 
+//heart
+.icon {
+    svg {
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+
+            &.heart_plain {
+                opacity:0;
+            }
+            &.heart_plain1{
+                right: 25px;
+                top: 10%;
+                width: 10px;
+                opacity: 0;
+            }
+            &.heart_plain2{
+                right: 37px;
+                top: 10%;
+                width: 10px;
+                opacity: 0;
+            }
+            &.heart_plain3{
+                right: 40px;
+                top: 5%;
+                width: 10px;
+                opacity: 0;
+            }
+            &.heart_plain4{
+                right: 22px;
+                top: 5%;
+                width: 10px;
+                opacity: 0;
+                
+            }
+    }
+    &:hover {
+        svg{
+            &.heart_plain{
+                opacity: 1;
+            }
+            &.heart_border {
+                opacity: 0;
+            }
+            &.heart_plain1{
+                opacity: 1;
+                animation: small_heart 2.2s $courbe infinite;
+            }
+            &.heart_plain2{
+                opacity: 1;
+                animation: small_heart 2.2s $courbe infinite;
+            }
+            &.heart_plain3{
+                opacity: 1;
+                animation: small_heart 2.2s $courbe infinite;
+            }
+            &.heart_plain4{
+                opacity: 1;
+                animation: small_heart 2.2s $courbe infinite;
+            }
+        }
+    }
+}
+
+//end of heart
 //spinner loading
 
 #spinner_loader {
@@ -9,7 +76,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    animation: hidden 4s ease-in-out forwards;
+    animation: hidden 0s ease-in-out forwards;
     position: fixed;
     z-index: 9999;
     top : 0px;
@@ -254,9 +321,10 @@
                   }
               }
           }
-          div {
+          >div {
               @include dflex_col;
                 a {
+                    position: relative;
                     padding: 10px;
                     h3 {
                         font-weight: bold;

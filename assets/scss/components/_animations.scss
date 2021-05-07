@@ -44,8 +44,15 @@
 //spinner loading
 //heart
 
-@keyframes heartpulse {
-  
+@keyframes small_heart {
+  from{
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 0;
+    transform: translateY(0px);
+  }
 }
 
 //heart
