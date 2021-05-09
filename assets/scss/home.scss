@@ -1,7 +1,8 @@
 @import "./main.scss";
 
 //heart
-.currentColor {
+//heart gradient color
+.heartColor {
     fill: url(#myheartgradient);
 }
 .heart-color-top {
@@ -16,6 +17,7 @@
 .heart-color-bottom{
     stop-color: #d76cda ;
 }
+//heart gradient color
 
 .icon {
     svg {
@@ -65,19 +67,19 @@
                 opacity: 0;
             }
             &.heart_plain1{
-                opacity: 1;
+                opacity: 0.8;
                 animation: small_heart 2.2s $courbe infinite;
             }
             &.heart_plain2{
-                opacity: 1;
+                opacity: 0.8;
                 animation: small_heart 2.2s $courbe infinite;
             }
             &.heart_plain3{
-                opacity: 1;
+                opacity: 0.8;
                 animation: small_heart 2.2s $courbe infinite;
             }
             &.heart_plain4{
-                opacity: 1;
+                opacity: 0.8;
                 animation: small_heart 2.2s $courbe infinite;
             }
         }
