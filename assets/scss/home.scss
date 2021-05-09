@@ -1,10 +1,22 @@
 @import "./main.scss";
 
 //heart
-.gradient-heart {
-    @include gradient-heart;
+.currentColor {
+    fill: url(#myheartgradient);
 }
-    
+.heart-color-top {
+    stop-color: #a45cdc;
+} 
+.heart-color-middle{
+    stop-color: #b962db ;
+}
+.heart-color-middle2{
+    stop-color: #c767db ;
+}
+.heart-color-bottom{
+    stop-color: #d76cda ;
+}
+
 .icon {
     svg {
         width: 30px;
@@ -15,8 +27,7 @@
 
             &.heart_plain { //coeur plein
                 opacity:0;
-                position: relative;
-                
+                position: relative;   
             }
             &.heart_plain1{//les petits coeurs * 4
                 right: 25px;
