@@ -29,7 +29,6 @@
 
             &.heart_plain { //coeur plein
                 opacity:0;
-                position: relative;   
             }
             &.heart_plain1{//les petits coeurs * 4
                 right: 25px;
@@ -60,27 +59,14 @@
         svg{
             &.heart_plain{
                 opacity: 1;
-                animation: heartbeat 1s ease-in-out infinite;
-                position: absolute;
+                animation: heartbeat 3s ease-in-out;
+                position:absolute;
             }
             &.heart_border {
                 opacity: 0;
             }
-            &.heart_plain1{
-                opacity: 0.8;
-                animation: small_heart 2.2s $courbe infinite;
-            }
-            &.heart_plain2{
-                opacity: 0.8;
-                animation: small_heart 2.2s $courbe infinite;
-            }
-            &.heart_plain3{
-                opacity: 0.8;
-                animation: small_heart 2.2s $courbe infinite;
-            }
-            &.heart_plain4{
-                opacity: 0.8;
-                animation: small_heart 2.2s $courbe infinite;
+            &.heart_plain1, &.heart_plain2, &.heart_plain3, &.heart_plain4{
+                animation: small_heart 3s $courbe;
             }
         }
     }

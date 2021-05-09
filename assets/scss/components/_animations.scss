@@ -1,5 +1,6 @@
 //spinner loading
 
+//la visibilité du spinner loading
 @keyframes hidden{
   0% {
     opacity: 1;
@@ -12,7 +13,7 @@
     visibility: hidden;
   }
 }
-
+//apparition des bulles icones
 @keyframes bubble{
     from{
       opacity: 1;
@@ -25,7 +26,7 @@
       color: $secondary-color;
     }
 }
-  
+ //le logo Ohmyfood 
 @keyframes pulseBorder{
     0%{
       border: 2px double $primary-color;
@@ -44,44 +45,56 @@
 //spinner loading
 //heart
 
+//les petits coeurs
 @keyframes small_heart {
-  from{
-    opacity: 1;
-    transform: translateY(20px);
+  0%{
+    opacity: 0;
+    transform: translateY(15px);
   }
-  to{
+  50%{
+    opacity: 0.2;
+    transform: translateY(8px);
+  }
+  100%{
     opacity: 0;
     transform: translateY(0px);
   }
 }
 
-//battement du coeur
+//battement du coeur et apparition progressive
 @keyframes heartbeat
 {
   0%
   {
-    transform: scale( .75 );
+    transform: scale( 0 );
+    opacity: 0;
   }
   20%
   {
-    transform: scale( 1 );
+    transform: scale( 0.85 );
+    opacity: 0.4;
   }
   40%
   {
-    transform: scale( .75 );
+    transform: scale( 1 );
+    opacity: 0.6;
   }
   60%
   {
-    transform: scale( 1 );
+    transform: scale( 0.85 );
+    opacity: 0.8;
+
   }
   80%
   {
-    transform: scale( .75 );
+    transform: scale( 1 );
+    opacity: 1;
   }
   100%
   {
-    transform: scale( .75 );
+    transform: scale( 1 );
+    opacity: 1;
   }
 }
 
-//heart
+// end of heart
