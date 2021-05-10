@@ -72,5 +72,15 @@
     opacity: 1;
   }
 }
-
+/*disparition du coeur border*/
+@keyframes hidden-heart {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-15);
+  }
+}
 // end of heart

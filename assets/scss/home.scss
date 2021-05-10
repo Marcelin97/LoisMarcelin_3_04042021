@@ -17,7 +17,7 @@
 .heart-color-bottom {
   stop-color: #d76cda;
 }
-//heart gradient color
+/*heart gradient color*/
 
 .icon {
   svg {
@@ -26,6 +26,7 @@
     right: 20px;
     top: 20%;
     transform: translateY(-20%);
+    cursor: pointer;
 
     &.heart_plain {
       //coeur plein
@@ -38,10 +39,13 @@
       &.heart_plain {
         animation: heartbeat 3s ease-in-out forwards;
         position: absolute;
-        opacity: 1;
+        animation-delay: 900ms;
+        transform-origin: bottom;
       }
       &.heart_border {
         opacity: 0;
+        position: absolute;
+        animation: hidden-heart 4s ease 0s forwards;
       }
     }
   }

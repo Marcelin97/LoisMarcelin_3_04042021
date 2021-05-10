@@ -32,16 +32,22 @@
     &.heart_plain {
       /*coeur plein*/
       opacity: 0;
+      position: relative;
     }
   }
   &:hover {
     svg {
+      transform: translateY(-20%);
       &.heart_plain {
         animation: heartbeat 3s ease-in-out forwards;
-        opacity: 1;
+        animation-delay: 900ms;
+        transform-origin: bottom;
+        position: absolute;
       }
       &.heart_border {
         opacity: 0;
+        position: absolute;
+        animation: hidden-heart 4s ease 0s forwards;
       }
     }
   }
