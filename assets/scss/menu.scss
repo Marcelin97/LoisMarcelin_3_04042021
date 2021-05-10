@@ -33,31 +33,6 @@
       /*coeur plein*/
       opacity: 0;
     }
-    &.heart_plain1 {
-      /*les petits coeurs * 4*/
-      right: 45px;
-      top: 1.2%;
-      width: 10px;
-      opacity: 0;
-    }
-    &.heart_plain2 {
-      right: 55px;
-      top: 1.2%;
-      width: 10px;
-      opacity: 0;
-    }
-    &.heart_plain3 {
-      right: 40px;
-      top: 0.8%;
-      width: 10px;
-      opacity: 0;
-    }
-    &.heart_plain4 {
-      right: 60px;
-      top: 0.8%;
-      width: 10px;
-      opacity: 0;
-    }
   }
   &:hover {
     svg {
@@ -67,12 +42,6 @@
       }
       &.heart_border {
         opacity: 0;
-      }
-      &.heart_plain1,
-      &.heart_plain2,
-      &.heart_plain3,
-      &.heart_plain4 {
-        animation: small_heart 3s $courbe forwards;
       }
     }
   }

@@ -43,25 +43,9 @@
 }
 
 //spinner loading
+
 //heart
 
-//les petits coeurs
-@keyframes small_heart {
-  0% {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  50% {
-    opacity: 0.2;
-    transform: translateY(8px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(0px);
-  }
-}
-
-//battement du coeur et apparition progressive
 @keyframes heartbeat {
   0% {
     transform: scale(0);
