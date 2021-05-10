@@ -3,267 +3,273 @@
 //heart
 //heart gradient color
 .heartColor {
-    fill: url(#myheartgradient);
+  fill: url(#myheartgradient);
 }
 .heart-color-top {
-    stop-color: #a45cdc;
-} 
-.heart-color-middle{
-    stop-color: #b962db ;
+  stop-color: #a45cdc;
 }
-.heart-color-middle2{
-    stop-color: #c767db ;
+.heart-color-middle {
+  stop-color: #b962db;
 }
-.heart-color-bottom{
-    stop-color: #d76cda ;
+.heart-color-middle2 {
+  stop-color: #c767db;
+}
+.heart-color-bottom {
+  stop-color: #d76cda;
 }
 //heart gradient color
 
 .icon {
-    svg {
-        width: 30px;
-        position: absolute;
-        right: 20px;
-        top: 20%;
-        transform: translateY(-20%);
+  svg {
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20%;
+    transform: translateY(-20%);
 
-            &.heart_plain { //coeur plein
-                opacity:0;
-            }
-            &.heart_plain1{//les petits coeurs * 4
-                right: 25px;
-                top: 10%;
-                width: 10px;
-                opacity: 0;
-            }
-            &.heart_plain2{
-                right: 37px;
-                top: 10%;
-                width: 10px;
-                opacity: 0;
-            }
-            &.heart_plain3{
-                right: 40px;
-                top: 5%;
-                width: 10px;
-                opacity: 0;
-            }
-            &.heart_plain4{
-                right: 22px;
-                top: 5%;
-                width: 10px;
-                opacity: 0;
-            }
+    &.heart_plain {
+      //coeur plein
+      opacity: 0;
+      position: relative;
     }
-    &:hover {
-        svg{
-            &.heart_plain{
-                opacity: 1;
-                animation: heartbeat 3s ease-in-out;
-                position:absolute;
-            }
-            &.heart_border {
-                opacity: 0;
-            }
-            &.heart_plain1, &.heart_plain2, &.heart_plain3, &.heart_plain4{
-                animation: small_heart 3s $courbe;
-            }
-        }
+    &.heart_plain1 {
+      //les petits coeurs * 4
+      right: 25px;
+      top: 10%;
+      width: 10px;
+      opacity: 0;
     }
+    &.heart_plain2 {
+      right: 37px;
+      top: 10%;
+      width: 10px;
+      opacity: 0;
+    }
+    &.heart_plain3 {
+      right: 40px;
+      top: 5%;
+      width: 10px;
+      opacity: 0;
+    }
+    &.heart_plain4 {
+      right: 22px;
+      top: 5%;
+      width: 10px;
+      opacity: 0;
+    }
+  }
+  &:hover {
+    svg {
+      &.heart_plain {
+        animation: heartbeat 3s ease-in-out forwards;
+        position: absolute;
+        opacity: 1;
+      }
+      &.heart_border {
+        opacity: 0;
+      }
+      &.heart_plain1,
+      &.heart_plain2,
+      &.heart_plain3,
+      &.heart_plain4 {
+        animation: small_heart 3s $courbe forwards;
+      }
+    }
+  }
 }
 
 //end of heart
 //spinner loading
 
 #spinner_loader {
-    width: 100%;
-    height: 100%;
-    background-color: $light-grey;
+  width: 100%;
+  height: 100%;
+  background-color: $light-grey;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  animation: hidden 0s ease-in-out forwards;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  left: 0px;
+  .container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: flex;
-    animation: hidden 0s ease-in-out forwards;
-    position: fixed;
-    z-index: 9999;
-    top : 0px;
-    left : 0px;
-        .container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-            .fa-utensils {
-                position: absolute;
-                top: -80px;
-                animation: bubble 2.4s $courbe infinite;
-                font-size: 1.6rem;
-            }
-            .fa-ice-cream {
-                position: absolute;
-                left: 20px;
-                bottom: 210px;
-                animation: bubble 2.2s $courbe infinite;
-                font-size: 2.8rem;
-            }
-            .fa-cheese {
-                position: absolute;
-                top: 150px;
-                left: -30px;
-                animation: bubble 1.8s $courbe infinite;
-                font-size: 1.4rem;
-            }
-            .fa-bacon {
-                position: absolute;
-                top: 40px;
-                left: -70px;
-                animation: bubble 1.7s $courbe infinite;
-                font-size: 1.7rem;
-            }
-            .fa-cocktail {
-                position: absolute;
-                bottom: -15px;
-                right: 30px;
-                animation: bubble 2.4s $courbe infinite;
-                font-size: 1.4rem;
-            }
-        img {
-            height: 150px;
-            width: 280px;
-            padding: 4px;
-            animation: pulseBorder 2s $courbe infinite;
-        }
-            .fa-coffee {
-                position: absolute;
-                right: -40px;
-                animation: bubble 1.7s $courbe infinite;
-                font-size: 1.4rem;
-            }
-            .fa-wine-bottle {
-                position: absolute;
-                top: -50px;
-                right: -30px;
-                animation: bubble 1.9s $courbe infinite;
-                font-size: 1.9rem;
-            }
-            .fa-glass-cheers {
-                position: absolute;
-                top: 160px;
-                left: 40px;
-                animation: bubble 2.1s $courbe infinite;
-                font-size: 2.2rem;
-            }
-            .fa-hamburger {
-                position: absolute;
-                top: 40px;
-                right: -90px;
-                animation: bubble 1.7s $courbe infinite;
-                font-size: 2.4rem;
-            }
+    position: relative;
+  }
+  .fa-utensils {
+    position: absolute;
+    top: -80px;
+    animation: bubble 2.4s $courbe infinite;
+    font-size: 1.6rem;
+  }
+  .fa-ice-cream {
+    position: absolute;
+    left: 20px;
+    bottom: 210px;
+    animation: bubble 2.2s $courbe infinite;
+    font-size: 2.8rem;
+  }
+  .fa-cheese {
+    position: absolute;
+    top: 150px;
+    left: -30px;
+    animation: bubble 1.8s $courbe infinite;
+    font-size: 1.4rem;
+  }
+  .fa-bacon {
+    position: absolute;
+    top: 40px;
+    left: -70px;
+    animation: bubble 1.7s $courbe infinite;
+    font-size: 1.7rem;
+  }
+  .fa-cocktail {
+    position: absolute;
+    bottom: -15px;
+    right: 30px;
+    animation: bubble 2.4s $courbe infinite;
+    font-size: 1.4rem;
+  }
+  img {
+    height: 150px;
+    width: 280px;
+    padding: 4px;
+    animation: pulseBorder 2s $courbe infinite;
+  }
+  .fa-coffee {
+    position: absolute;
+    right: -40px;
+    animation: bubble 1.7s $courbe infinite;
+    font-size: 1.4rem;
+  }
+  .fa-wine-bottle {
+    position: absolute;
+    top: -50px;
+    right: -30px;
+    animation: bubble 1.9s $courbe infinite;
+    font-size: 1.9rem;
+  }
+  .fa-glass-cheers {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    animation: bubble 2.1s $courbe infinite;
+    font-size: 2.2rem;
+  }
+  .fa-hamburger {
+    position: absolute;
+    top: 40px;
+    right: -90px;
+    animation: bubble 1.7s $courbe infinite;
+    font-size: 2.4rem;
+  }
 }
 
 //spinner loading
 /*reservation*/
 
 #reservation {
-    @include dflex_col;
-    text-align: center;
-    flex-wrap: wrap;
-    background-color: $light-grey;
-    padding-bottom: 50px;
-        h1 {
-            font-weight: 700;
-            font-size: 1.6em;
-            margin: 0 auto;        
-        }
-            p {
-                font-weight: 200;  
-                padding: 20px;
-            }
+  @include dflex_col;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: $light-grey;
+  padding-bottom: 50px;
+  h1 {
+    font-weight: 700;
+    font-size: 1.6em;
+    margin: 0 auto;
+  }
+  p {
+    font-weight: 200;
+    padding: 20px;
+  }
 }
 
 /*end of reservation*/
 /*fonction*/
 
 #fonction {
-    justify-content: center;
-    background-color: $white;
-    padding: 25px 25px;
-        > div {
-            @media only screen and (min-width:992px){
-                margin: 0 auto;
-                max-width: 1100px;
-            }
+  justify-content: center;
+  background-color: $white;
+  padding: 25px 25px;
+  > div {
+    @media only screen and (min-width: 992px) {
+      margin: 0 auto;
+      max-width: 1100px;
+    }
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 20px 0px 20px 5px;
+    flex-basis: 100%;
+  }
+  ol {
+    @include dflex_col;
+    align-items: center;
+    row-gap: 30px;
+    @media only screen and (min-width: 576px) {
+      li {
+        min-width: 280px;
+        max-width: 300px;
+      }
+      @media only screen and (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+    li {
+      display: flex;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+      background-color: $light-grey;
+      box-shadow: 0px 6px 8px $shadow;
+      border-radius: 15px;
+      transition-duration: 600ms;
+      counter-increment: steps;
+      position: relative;
+      margin: 0 auto;
+      &::before {
+        content: counter(steps);
+        position: absolute;
+        line-height: 1.7em;
+        width: 1.7em;
+        height: 1.7em;
+        border-radius: 15px;
+        min-width: 1.7em;
+        left: -1em;
+        color: white;
+        text-align: center;
+        background-color: $primary-color;
+      }
+      &:hover {
+        transition-duration: 600ms;
+        background: $light-purple;
+        i {
+          transition-duration: 600ms;
+          color: $primary-color;
         }
-        h3 {
-            font-weight: bold;
-            font-size: 1.5em;
-            margin: 20px 0px 20px 5px;
-            flex-basis: 100%;
+      }
+
+      a {
+        display: flex;
+        width: 100%;
+        margin-left: 30px;
+        i {
+          color: $grey-grey;
+          margin-right: 15px;
         }
-        ol {
-            @include dflex_col;
-            align-items: center;
-            row-gap: 30px;
-                @media only screen and (min-width: 576px) {
-                        li {
-                            min-width: 280px;
-                            max-width: 300px;
-                        }
-                        @media only screen and (min-width: 992px){
-                            flex-direction: row;
-                            justify-content: space-around;
-                        }
-                }
-                li {
-                    display: flex;
-                    align-items: center;
-                    height: 70px;
-                    width: 100%;            background-color: $light-grey;
-                    box-shadow: 0px 6px 8px $shadow;
-                    border-radius: 15px;
-                    transition-duration: 600ms;
-                    counter-increment: steps;
-                    position: relative;
-                    margin: 0 auto;
-                        &::before {
-                            content: counter(steps);
-                            position: absolute;
-                            line-height: 1.7em;
-                            width: 1.7em;
-                            height: 1.7em;
-                            border-radius: 15px;
-                            min-width: 1.7em;
-                            left: -1em;
-                            color: white;
-                            text-align: center;
-                            background-color: $primary-color;
-                        }
-                                &:hover {
-                                    transition-duration: 600ms;
-                                    background: $light-purple;
-                                        i {
-                                            transition-duration: 600ms;
-                                            color: $primary-color;
-                                        }
-                                }
-                        
-                    a {
-                        display: flex;
-                        width: 100%;
-                        margin-left: 30px;
-                            i {
-                                color: $grey-grey;
-                                margin-right: 15px;
-                            }
-                            p {
-                                font-weight: bold;
-                            }
-                    } 
-                }    
-                    
+        p {
+          font-weight: bold;
         }
+      }
+    }
+  }
 }
 
 /*end of fonction*/
@@ -271,78 +277,78 @@
 
 #restaurants {
   background-color: $light-grey;
-    > div {
-        @include dflex_col;
-            @media only screen and (min-width: 992px) {
-                flex-flow: row wrap;
-                margin: 0 auto;
-                max-width: 1100px;
-            }
+  > div {
+    @include dflex_col;
+    @media only screen and (min-width: 992px) {
+      flex-flow: row wrap;
+      margin: 0 auto;
+      max-width: 1100px;
+    }
 
     h2 {
       font-size: 1.5em;
       font-weight: bold;
       margin: 20px 0px 20px 5px;
-        @media only screen and (min-width: 992px){
-            flex-basis: 100%;
-        }
-    }
-      article {
-        @include dflex_col;
-        margin: 10px 0px;
-        height: 250px;
-        box-shadow: 0px 5px 5px $shadow;
-        border-radius: 15px;
-            @media only screen and (min-width: 992px) {
-                height: 290px;
-                flex-basis: 49%;
-                margin: 10px auto;                
-            }
-          figure {
-            @include dflex_col;
-            height: 75%;
-              a {
-                position: relative;
-                height: 100%;
-                  img {
-                    border-radius: 15px 15px 0px 0px;
-                    max-height: 100%;
-                    object-fit: cover;
-                    width: 100%;
-                    object-position: 50% 65%;
-                  }
-                  span {
-                    position: absolute;
-                    top: 15px;
-                    right: 10px;
-                    display: flex;
-                    align-items: center;
-                    background-color: $tertiary-color;
-                    color: $dark-green;
-                    font-weight: bold;
-                    height: 25px;
-                    font-size: 0.8em;
-                    padding: 10px;
-                    border-radius: 2px;
-                  }
-              }
-          }
-          >div {
-              @include dflex_col;
-                a {
-                    position: relative;
-                    padding: 10px;
-                    h3 {
-                        font-weight: bold;
-                        padding-bottom: 7px;
-                        font-size: 1.2em;
-                    }
-                    p {
-                        font-weight:300;
-                    }
-                }
-          }
+      @media only screen and (min-width: 992px) {
+        flex-basis: 100%;
       }
-    }  
+    }
+    article {
+      @include dflex_col;
+      margin: 10px 0px;
+      height: 250px;
+      box-shadow: 0px 5px 5px $shadow;
+      border-radius: 15px;
+      @media only screen and (min-width: 992px) {
+        height: 290px;
+        flex-basis: 49%;
+        margin: 10px auto;
+      }
+      figure {
+        @include dflex_col;
+        height: 75%;
+        a {
+          position: relative;
+          height: 100%;
+          img {
+            border-radius: 15px 15px 0px 0px;
+            max-height: 100%;
+            object-fit: cover;
+            width: 100%;
+            object-position: 50% 65%;
+          }
+          span {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            background-color: $tertiary-color;
+            color: $dark-green;
+            font-weight: bold;
+            height: 25px;
+            font-size: 0.8em;
+            padding: 10px;
+            border-radius: 2px;
+          }
+        }
+      }
+      > div {
+        @include dflex_col;
+        a {
+          position: relative;
+          padding: 10px;
+          h3 {
+            font-weight: bold;
+            padding-bottom: 7px;
+            font-size: 1.2em;
+          }
+          p {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
 }
 /*end of restaurants*/

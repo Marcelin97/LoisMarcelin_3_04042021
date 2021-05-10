@@ -1,177 +1,251 @@
 @import "./main.scss";
 
-//heart
+/*heart*/
 
-.heart {
-    
+/*heart gradient color*/
+.heartColor {
+  fill: url(#myheartgradient);
+}
+.heart-color-top {
+  stop-color: #a45cdc;
+}
+.heart-color-middle {
+  stop-color: #b962db;
+}
+.heart-color-middle2 {
+  stop-color: #c767db;
+}
+.heart-color-bottom {
+  stop-color: #d76cda;
+}
+/*heart gradient color*/
+
+.icon {
+  svg {
+    width: 30px;
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    transform: translateY(-2%);
+    cursor: pointer;
+
+    &.heart_plain {
+      /*coeur plein*/
+      opacity: 0;
+    }
+    &.heart_plain1 {
+      /*les petits coeurs * 4*/
+      right: 45px;
+      top: 1.2%;
+      width: 10px;
+      opacity: 0;
+    }
+    &.heart_plain2 {
+      right: 55px;
+      top: 1.2%;
+      width: 10px;
+      opacity: 0;
+    }
+    &.heart_plain3 {
+      right: 40px;
+      top: 0.8%;
+      width: 10px;
+      opacity: 0;
+    }
+    &.heart_plain4 {
+      right: 60px;
+      top: 0.8%;
+      width: 10px;
+      opacity: 0;
+    }
+  }
+  &:hover {
+    svg {
+      &.heart_plain {
+        animation: heartbeat 3s ease-in-out forwards;
+        opacity: 1;
+      }
+      &.heart_border {
+        opacity: 0;
+      }
+      &.heart_plain1,
+      &.heart_plain2,
+      &.heart_plain3,
+      &.heart_plain4 {
+        animation: small_heart 3s $courbe forwards;
+      }
+    }
+  }
 }
 
-//end of heart
-//header
+/*heart*/
+/*header*/
 
- header {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     background-color: $white;
-     padding-top: 15px;
-     position: relative;
-        a{
-            i { //flèche retour
-                color: $dark-grey;
-                font-size: 1.3em;
-                left: 5%;
-                position: absolute;
-                top: 35%;
-            }
-
-        }
-figure {
-        margin: 0 auto;
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  padding-top: 15px;
+  position: relative;
+  a {
+    i {
+      /*flèche retour*/
+      color: $dark-grey;
+      font-size: 1.3em;
+      left: 5%;
+      position: absolute;
+      top: 35%;
     }
- }
- main {
-     display: flex;
-     justify-content: center;
-     position: relative;
-    figure {
-        height: 260px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        position:absolute;
-            @media only screen and (min-width: 992px){
-                height: 320px;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    top: 260px;
-                    height: 200px;
-                    width: 100%;
-                    background: linear-gradient(to bottom, rgba(255, 255, 255,0), rgba(255, 255, 255, 1));
-                }
-            }
-        
-        img {
-            object-fit: cover;
-            width: 100%;
-        }
-    }
- }
-
- //end of header
- //menu
-
- #menu {
-    max-width: 992px;
+  }
+  figure {
     margin: 0 auto;
-    background-color: #f6f6f6;
-    border-radius: 30px 30px 0 0;
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  figure {
+    height: 260px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    z-index: 1;
-    margin-top: 200px;
-        h1 {
-            font-size: 1.5em;
-            margin-top: 10px;
-            font-family: 'Shrikhand', sans-serif;
-            padding-left: 10px;
-        }
-        > span{ //heart
-            margin-top: 5px;
-            line-height: 2em;
-            margin-right: 20px;
-                i{
-                    font-size: 1.3em;
-                }
-        }
- }
- section {
-     display: flex;
-     flex-direction: column;
-     width: 100%;
-        h2 {
-            text-transform: uppercase;
-            padding-left: 10px;
-                &::after{ //souligne le titre en vert
-                    content: "";
-                    display: flex;
-                    width: 40px;
-                    height: 3px;
-                    background-color: $tertiary-color;
-                    margin-top: 5px;
-                    margin-bottom: 15px;
-                }
-        }
- }
- article {
-    background-color: #FFF;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    box-shadow: 0px 3px 8px $shadow;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-        div{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            height: 100%;
-            min-width: 0;
-                h3 {
-                    font-weight: bold;
-                    font-size: 1.1em;
-                    text-overflow: ellipsis; 
-                    overflow: hidden; 
-                    white-space: nowrap;
-                    width: 100%;
-                }
-                p {
-                    margin-top: 5px;
-                    font-weight: 100;
-                    font-size: 1em;
-                    text-overflow: ellipsis; 
-                    overflow: hidden; 
-                    white-space: nowrap;
-                    width: 100%;
-                }
-        }
-    span { //price
-        margin-bottom: 20px;
-        overflow: visible;
-        position: relative;
-        top: 50px;
+    justify-content: center;
+    position: absolute;
+    @media only screen and (min-width: 992px) {
+      height: 320px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 260px;
+        height: 200px;
+        width: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 1)
+        );
+      }
     }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
 }
 
-//common to several element  
-#menu_starter, #menu_dish, #menu_dessert {
-    padding-right: 0;
-    padding-left: 0;
+/*end of header*/
+/*menu*/
+
+#menu {
+  max-width: 992px;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1;
+  margin-top: 200px;
+  position: relative;
+  h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: "Shrikhand", sans-serif;
+    padding-left: 10px;
+  }
 }
 section {
-    padding: 25px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  h2 {
+    text-transform: uppercase;
+    padding-left: 10px;
+    &::after {
+      /*souligne le titre en vert*/
+      content: "";
+      display: flex;
+      width: 40px;
+      height: 3px;
+      background-color: $tertiary-color;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+  }
+}
+article {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 0px 3px 8px $shadow;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    min-width: 0;
+    h3 {
+      font-weight: bold;
+      font-size: 1.1em;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+    p {
+      margin-top: 5px;
+      font-weight: 100;
+      font-size: 1em;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+  span {
+    /*price*/
+    margin-bottom: 20px;
+    overflow: visible;
+    position: relative;
+    top: 50px;
+  }
 }
 
-//common to several element
-//button
+/*common to several element*/
+
+#menu_starter,
+#menu_dish,
+#menu_dessert {
+  padding-right: 0;
+  padding-left: 0;
+}
+section {
+  padding: 25px 15px 0px 15px;
+}
+
+/*common to several element*/
+/*button*/
 
 .btn {
-    margin-top: 35px;
-    margin-bottom: 80px;
+  margin-top: 35px;
+  margin-bottom: 80px;
 }
 
-//end of button
-//footer
+/*end of button*/
+/*footer*/
 
 footer nav {
-    max-width: 992px;
+  max-width: 992px;
 }
 
-//end of footer
+/*end of footer*/

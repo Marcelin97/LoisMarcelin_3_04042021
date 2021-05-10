@@ -1,709 +1,594 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <!--head-->
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta
-            name="description"
-            content="Ohmyfood des menus gastronomiques à commander en ligne pour ne plus devoir attendre au restaurant"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Oh my food</title>
-        <link rel="stylesheet" href="./assets/css/home.css" />
+  <!--head-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Ohmyfood des menus gastronomiques à commander en ligne pour ne plus devoir attendre au restaurant"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oh my food</title>
+    <link rel="stylesheet" href="./assets/css/home.css" />
     <!--end of head-->
-    </head>
-    <body>
+  </head>
+  <body>
     <!--body-->
-    
-        <!--spinner-->
 
-        <section id="spinner_loader">
-            <div class="container">
-                <div class="icone">
-                    <i class="fas fa-utensils"></i>
-                    <i class="fas fa-ice-cream"></i>
-                    <i class="fas fa-cheese"></i>
-                    <i class="fas fa-bacon"></i>
-                    <i class="fas fa-cocktail"></i>
-                </div>
-                <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
-                <div class="icone_2">
-                    <i class="fas fa-coffee"></i>
-                    <i class="fas fa-wine-bottle"></i>
-                    <i class="fas fa-glass-cheers"></i>
-                    <i class="fas fa-hamburger"></i>
-                </div>
-            </div>
-            </section>
-    
-            <!--spinner-->
-        <header>
-        <!--page header-->
-            <a href="./index.html">
-                <img 
-                    src="./assets/images/logo/ohmyfood@2x.svg"
-                    alt="Le logo Ohmyfood"
-                >
-            </a>
+    <!--spinner loading-->
+
+    <div id="spinner_loader">
+      <div class="container">
+        <div class="icone">
+          <i class="fas fa-utensils"></i>
+          <i class="fas fa-ice-cream"></i>
+          <i class="fas fa-cheese"></i>
+          <i class="fas fa-bacon"></i>
+          <i class="fas fa-cocktail"></i>
+        </div>
+        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" />
+        <div class="icone_2">
+          <i class="fas fa-coffee"></i>
+          <i class="fas fa-wine-bottle"></i>
+          <i class="fas fa-glass-cheers"></i>
+          <i class="fas fa-hamburger"></i>
+        </div>
+      </div>
+    </div>
+
+    <!--spinner loading-->
+
+    <header>
+      <!--page header-->
+      <a href="./index.html">
+        <img
+          src="./assets/images/logo/ohmyfood@2x.svg"
+          alt="Le logo Ohmyfood"
+        />
+      </a>
+      <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Paris, Belleville</p>
+      </div>
+      <!--end of page header-->
+    </header>
+
+    <main>
+      <!--main content-->
+      <section id="reservation">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>
+          Découvrez des restaurants d'exception, séléctionnés par nos soins.
+        </p>
+        <a class="btn" href="#restaurants">Explorer nos restaurants</a>
+      </section>
+      <section id="fonction">
+        <div>
+          <h3>Fonctionnement</h3>
+          <ol>
+            <li>
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-list"></i>
+                <p>Composez votre menu</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-store"></i>
+                <p>Degustez au restaurant</p>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="restaurants">
+        <div>
+          <h2>Restaurants</h2>
+          <article>
+            <figure>
+              <a href="./pages/la_palette_du_gout.html">
+                <img
+                  src="./assets/images/restaurants/La_palette_du_gout_4402w.jpg"
+                  alt="Assiete gastronomiques avec des mains et des couverts"
+                />
+                <span>Nouveau</span>
+              </a>
+            </figure>
             <div>
-                <i class="fas fa-map-marker-alt"></i><p>Paris, Belleville</p>
+              <a href="./pages/la_palette_du_gout.html">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+
+                <div class="icon">
+                  <!--coeur vide-->
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="far"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_border"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                    ></path>
+                  </svg>
+                  <!--coeur vide-->
+
+                  <!--coeur plein-->
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                    <defs>
+                      <linearGradient
+                        id="myheartgradient"
+                        x1="92%"
+                        y1="58%"
+                        x2="59%"
+                        y2="90%"
+                        gradientTransform="linear(225)"
+                      >
+                        <stop offset="27%" class="heart-color-top" />
+                        <stop offset="48%" class="heart-color-middle" />
+                        <stop offset="63%" class="heart-color-middle2" />
+                        <stop offset="89%" class="heart-color-bottom" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  <!--coeur plein-->
+                  <!--petits coeurs-->
+
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain1"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain2"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain3"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain4"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <!--petits coeurs-->
+                </div>
+              </a>
             </div>
-        <!--end of page header-->
-        </header>
-        <main>
-        <!--main content-->
-            <section id="reservation">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <a class="btn" href="#restaurants">Explorer nos restaurants</a>
-            </section>
-            <section id="fonction">
-                <div>
-                <h3>Fonctionnement</h3>
-                <ol>
-                  <li>
-                    <a href="#">
-                      <i class="fas fa-mobile-alt"></i>
-                      <p>Choisissez un restaurant</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fas fa-list"></i>
-                      <p>Composez votre menu</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fas fa-store"></i>
-                      <p>Degustez au restaurant</p>
-                    </a>
-                  </li>
-                </ol>
+          </article>
+          <article>
+            <figure>
+              <a href="./pages/la_note_enchantee.html">
+                <img
+                  src="./assets/images/restaurants/La_note_enchantee_3024w.jpg"
+                  alt="Assiette de boulettes de viandes et tomates"
+                />
+                <span>Nouveau</span>
+              </a>
+            </figure>
+            <div>
+              <a href="./pages/la_note_enchantee.html">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+
+                <div class="icon">
+                  <!--coeur vide-->
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="far"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_border"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                    ></path>
+                  </svg>
+                  <!--coeur vide-->
+
+                  <!--coeur plein-->
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+
+                  <!--coeur plein-->
+                  <!--petits coeurs-->
+
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain1"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain2"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain3"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain4"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <!--petits coeurs-->
                 </div>
-            </section>
-            <section id="restaurants">
-                <div>
-                    <h2>Restaurants</h2>
-                        <article>
-                            <figure>
-                                <a href="./pages/la_palette_du_gout.html">
-                                    <img 
-                                        src="./assets/images/restaurants/La_palette_du_gout_4402w.jpg" 
-                                        alt="Assiete gastronomiques avec des mains et des couverts">
-                                    <span>Nouveau</span>
-                                </a>
-                            </figure>
-                                <div>
-                                    <a href="./pages/la_palette_du_gout.html">
-                                        <h3>La palette du goût</h3>
-                                        <p>Ménilmontant</p>
+              </a>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <a href="./pages/a_la_francaise.html">
+                <img
+                  src="./assets/images/restaurants/A_la_francaise_3936w.jpg"
+                  alt="Assiette fantaisie en gros plan"
+                />
+              </a>
+            </figure>
+            <div>
+              <a href="./pages/a_la_francaise.html">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
 
-                                        <div class="icon">
-                                            <!--coeur vide-->
-                                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_border" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path fill="currentColor" 
-                                                    fill= »param(fill) #FFF » stroke= »param(outline) #000″ stroke-width= »param(outline-width) 1″ 
-                                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
-                                                </path>
-                                            </svg>
-                                            <!--coeur vide-->
+                <div class="icon">
+                  <!--coeur vide-->
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="far"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_border"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                    ></path>
+                  </svg>
+                  <!--coeur vide-->
 
-                                            <!--coeur plein-->
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            
-                                            <!--coeur plein-->
-                                            <!--petits coeurs-->
+                  <!--coeur plein-->
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
 
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain1" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain2" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain3" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain4" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
+                  <!--coeur plein-->
+                  <!--petits coeurs-->
 
-                                            <!--petits coeurs-->
-                                        </div>
-                                    </a>
-                                </div>
-                        </article>
-                        <article>
-                            <figure>
-                                <a href="./pages/la_note_enchantee.html">
-                                    <img 
-                                        src="./assets/images/restaurants/La_note_enchantee_3024w.jpg" 
-                                        alt="Assiette de boulettes de viandes et tomates">
-                                    <span>Nouveau</span>
-                                </a>
-                            </figure>
-                                <div>
-                                    <a href="./pages/la_note_enchantee.html">
-                                        <h3>La note enchantée</h3>
-                                        <p>Charonne</p>
-                                        <div class="icon">
-                                            <!--coeur vide-->
-                                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_border" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path fill="currentColor" 
-                                                    fill= »param(fill) #FFF » stroke= »param(outline) #000″ stroke-width= »param(outline-width) 1″ 
-                                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
-                                                </path>
-                                            </svg>
-                                            <!--coeur vide-->
-
-                                            <!--coeur plein-->
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            
-                                            <!--coeur plein-->
-                                            <!--petits coeurs-->
-
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain1" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain2" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain3" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain4" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-
-                                            <!--petits coeurs-->
-                                        </div>
-                                    </a>
-                                </div>
-                        </article>
-                        <article>
-                            <figure>
-                                <a href="./pages/a_la_francaise.html">
-                                    <img 
-                                        src="./assets/images/restaurants/A_la_francaise_3936w.jpg" 
-                                        alt="Assiette fantaisie en gros plan">
-                            </a>
-                            </figure>
-                                <div>
-                                    <a href="./pages/a_la_francaise.html">
-                                        <h3>À la française</h3>
-                                        <p>Cité Rouge</p>
-                                        <div class="icon">
-                                            <!--coeur vide-->
-                                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_border" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path fill="currentColor" 
-                                                    fill= »param(fill) #FFF » stroke= »param(outline) #000″ stroke-width= »param(outline-width) 1″ 
-                                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
-                                                </path>
-                                            </svg>
-                                            <!--coeur vide-->
-
-                                            <!--coeur plein-->
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            
-                                            <!--coeur plein-->
-                                            <!--petits coeurs-->
-
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain1" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain2" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain3" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain4" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-
-                                            <!--petits coeurs-->
-                                        </div>
-                                    </a>
-                                </div>
-                        </article>
-                        <article>
-                            <figure>
-                                <a href="./pages/le_delice_des_sens.html">
-                                    <img 
-                                        src="./assets/images/restaurants/Le_delice_des_sens_5043w.jpg" 
-                                        alt="Assiette de poisson et ses petits légumes">
-                                </a>
-                            </figure>
-                                <div>
-                                    <a href="./pages/le_delice_des_sens.html">
-                                        <h3>Le délice des sens</h3>
-                                        <p>Folie-Méricourt</p>
-                                        <<div class="icon">
-                                            <!--coeur vide-->
-                                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_border" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path fill="currentColor" 
-                                                    fill= »param(fill) #FFF » stroke= »param(outline) #000″ stroke-width= »param(outline-width) 1″ 
-                                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
-                                                </path>
-                                            </svg>
-                                            <!--coeur vide-->
-
-                                            <!--coeur plein-->
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            
-                                            <!--coeur plein-->
-                                            <!--petits coeurs-->
-
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain1" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain2" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain3" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                                                class="svg-inline--fa fa-heart fa-w-16 heart_plain4" 
-                                                role="img" 
-                                                xmlns="http://www.w3.org/2000/svg" 
-                                                viewBox="0 0 512 512">
-                                                <path class="heartColor"
-                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                                <defs>
-                                                    <linearGradient id="myheartgradient" 
-                                                        x1="92%"
-                                                        y1="58%"
-                                                        x2="59%"
-                                                        y2="90%"
-                                                            gradientTransform="linear(225)">
-                                                                <stop offset="27%" class="heart-color-top" />
-                                                                <stop offset="48%" class="heart-color-middle" />
-                                                                <stop offset="63%" class="heart-color-middle2" />
-                                                                <stop offset="89%" class="heart-color-bottom" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-
-                                            <!--petits coeurs-->
-                                        </div>
-                                    </a>
-                                </div>
-                        </article>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain1"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain2"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain3"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain4"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <!--petits coeurs-->
                 </div>
-            </section>     
-        <!--main content-->
-        </main>
-        <footer>
-        <!--footer-->
-            <nav>
-                <h3>Ohmyfood</h3>
-                    <ul>
-                        <li><a href="#">
-                            <i class="fas fa-utensils"></i>
-                            Proposer un restaurant
-                            </a>
-                        </li>
-                        <li><a href="#">
-                            <i class="fas fa-hands-helping"></i>
-                            Devenir partenaire
-                            </a>
-                        </li>
-                        <li><a href="#">
-                            Mentions légales
-                            </a>
-                        </li>
-                        <li><a href="mailto:contact@ohmyfood.fr">
-                            Contact
-                            </a>
-                        </li>
-                    </ul>
-            </nav>
-        <!--end of footer-->
-        </footer>
+              </a>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <a href="./pages/le_delice_des_sens.html">
+                <img
+                  src="./assets/images/restaurants/Le_delice_des_sens_5043w.jpg"
+                  alt="Assiette de poisson et ses petits légumes"
+                />
+              </a>
+            </figure>
+            <div>
+              <a href="./pages/le_delice_des_sens.html">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+
+                <div class="icon">
+                  <!--coeur vide-->
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="far"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_border"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                    ></path>
+                  </svg>
+                  <!--coeur vide-->
+
+                  <!--coeur plein-->
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+
+                  <!--coeur plein-->
+                  <!--petits coeurs-->
+
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain1"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain2"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain3"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16 heart_plain4"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      class="heartColor"
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                  </svg>
+                  <!--petits coeurs-->
+                </div>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!--main content-->
+    </main>
+
+    <footer>
+      <!--footer-->
+      <nav>
+        <h3>Ohmyfood</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-utensils"></i>
+              Proposer un restaurant
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-hands-helping"></i>
+              Devenir partenaire
+            </a>
+          </li>
+          <li><a href="#"> Mentions légales </a></li>
+          <li><a href="mailto:contact@ohmyfood.fr"> Contact </a></li>
+        </ul>
+      </nav>
+      <!--end of footer-->
+    </footer>
+
     <!--Kits fontawesome pour les icônes-->
     <script
       src="https://kit.fontawesome.com/3742821b69.js"
       crossorigin="anonymous"
     ></script>
     <!--Kits fontawesome pour les icônes-->
+
     <!--end of body-->
-    </body>
+  </body>
 </html>
-
-
