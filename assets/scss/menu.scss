@@ -1,8 +1,8 @@
 @import "./main.scss";
 
 /*heart*/
-
 /*heart gradient color*/
+
 .heartColor {
   fill: url(#myheartgradient);
 }
@@ -18,7 +18,8 @@
 .heart-color-bottom {
   stop-color: #d76cda;
 }
-/*heart gradient color*/
+
+/*end of heart gradient color*/
 
 .icon {
   svg {
@@ -41,19 +42,19 @@
       &.heart_plain {
         animation: heartbeat 3s ease-in-out forwards;
         animation-delay: 900ms;
-        transform-origin: bottom;
+        transform-origin: center;
         position: absolute;
       }
       &.heart_border {
-        opacity: 0;
+        opacity: 1;
         position: absolute;
-        animation: hidden-heart 4s ease 0s forwards;
+        animation: hidden-heart 3s ease-in-out forwards;
       }
     }
   }
 }
 
-/*heart*/
+/*end of heart*/
 /*header*/
 
 header {

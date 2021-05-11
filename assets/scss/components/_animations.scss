@@ -1,6 +1,6 @@
-//spinner loading
+/*spinner loading*/
+/*la visibilité du spinner loading*/
 
-//la visibilité du spinner loading
 @keyframes hidden {
   0% {
     opacity: 1;
@@ -13,7 +13,7 @@
     visibility: hidden;
   }
 }
-//apparition des bulles icones
+/*apparition des bulles icones*/
 @keyframes bubble {
   from {
     opacity: 1;
@@ -26,7 +26,7 @@
     color: $secondary-color;
   }
 }
-//le logo Ohmyfood
+/*le logo Ohmyfood*/
 @keyframes pulseBorder {
   0% {
     border: 2px double $primary-color;
@@ -42,8 +42,8 @@
   }
 }
 
-//spinner loading
-//heart
+/*spinner loading*/
+/*heart*/
 
 @keyframes heartbeat {
   0% {
@@ -71,7 +71,7 @@
     opacity: 1;
   }
 }
-/*animation du coeur & border*/
+/*heartbeat*/
 @keyframes hidden-heart {
   0% {
     transform: translateY(0);
@@ -103,4 +103,4 @@
   }
 }
 
-// end of heart
+/*end of heart*/
