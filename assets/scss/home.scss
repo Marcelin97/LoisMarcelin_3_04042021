@@ -1,5 +1,6 @@
 @import "./main.scss";
 
+
 //heart
 //heart gradient color
 .heartColor {
@@ -40,17 +41,21 @@
         animation: heartbeat 3s ease-in-out forwards;
         position: absolute;
         animation-delay: 900ms;
-        transform-origin: bottom;
+        transform-origin: center;
       }
       &.heart_border {
-        opacity: 0;
+        opacity: 1;
         position: absolute;
-        animation: hidden-heart 4s ease 0s forwards;
+        animation: hidden-heart 3s ease-in-out forwards;
       }
     }
   }
 }
-
+path {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1550;
+  transform-origin: center;
+}
 //end of heart
 //spinner loading
 

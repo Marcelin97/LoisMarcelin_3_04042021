@@ -43,7 +43,6 @@
 }
 
 //spinner loading
-
 //heart
 
 @keyframes heartbeat {
@@ -72,15 +71,36 @@
     opacity: 1;
   }
 }
-/*disparition du coeur border*/
+/*animation du coeur & border*/
 @keyframes hidden-heart {
-  from {
-    opacity: 1;
-    transform: translateY(0px);
+  0% {
+    transform: translateY(0);
+    stroke-dashoffset: 0;
   }
-  to {
-    opacity: 0;
-    transform: translateY(-15);
+  30% {
+    stroke-dashoffset: 4100;
+  }
+  50% {
+    fill: transparent;
+  }
+  60% {
+    fill: transparent;
+    stroke-dashoffset: 4100;
+    fill: url(#myheartgradient);
+    transform: scale(0.90);
+  }
+  80% {
+    transform: scale(1);
+    stroke-dashoffset: 4100;
+    fill: url(#myheartgradient);
+  }
+  100% {
+    transform: translateY(0);
+    stroke-dashoffset: 1550;
+    fill: url(#myheartgradient);
+    stroke: url(#myheartgradient);
+    transform: scale(0.50);
   }
 }
+
 // end of heart
