@@ -1,5 +1,5 @@
 /*spinner loading*/
-/*la visibilité du spinner loading*/
+/*visibility du spinner loading*/
 
 @keyframes hidden {
   0% {
@@ -13,7 +13,9 @@
     visibility: hidden;
   }
 }
-/*apparition des bulles icones*/
+
+/*icon bubble*/
+
 @keyframes bubble {
   from {
     opacity: 1;
@@ -26,7 +28,8 @@
     color: $secondary-color;
   }
 }
-/*le logo Ohmyfood*/
+
+/*logo Ohmyfood*/
 @keyframes pulseBorder {
   0% {
     border: 2px double $primary-color;
@@ -42,7 +45,7 @@
   }
 }
 
-/*spinner loading*/
+/*end of spinner loading*/
 /*heart*/
 
 .animation-like {
@@ -86,6 +89,7 @@
 
 /*end of heart*/
 /*slide*/
+
 @keyframes slide-top {
   0% {
     transform: translateY(40px);
@@ -96,3 +100,25 @@
     opacity: 1;
   }
 }
+
+/*end of slide*/
+/*check*/
+
+@keyframes check-menu {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes uncheck {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(800px) rotate(540deg);
+  }
+}
+/*end of check*/

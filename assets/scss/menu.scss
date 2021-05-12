@@ -109,12 +109,21 @@ article {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
-  div {
+  overflow: hidden;
+      &:hover{
+        animation: check-menu 5s ease-out both;
+        overflow: visible;
+      }
+  div:first-child {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
     min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-basis: 100%;
     h3 {
       font-weight: bold;
       font-size: 1.1em;
@@ -133,14 +142,54 @@ article {
       width: 100%;
     }
   }
-  span {
+  > div:nth-child(2) {
     /*price*/
     margin-bottom: 20px;
-    overflow: visible;
     position: relative;
     top: 50px;
+    right: -5px;
+    width: 20px;
+    justify-content: space-between;
+    transition: width 0.6s;
+  }
+  &:hover > div:nth-child(2) {
+    right: 50px;
+    margin-left: 10px;
+  }
+  >div:nth-child(3) {
+    background-color: $light-green;
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $light-green;
+    transition-property: left 0.6s;
+    width: 70px;
+    left: 79px;
+      i {
+        color: white;
+      }
+
+  }
+  &:hover div:nth-child(3) {
+    flex-basis: 90px;
+    display: flex;
+    left: 0px;
+    i {
+      transform: rotate(360deg);
+      transition: transform 0.5s linear;
+    }
   }
 }
+/*slide animation*/
+
+@include lazy-menu (1,0,4);
+@include lazy-menu (2,0.6,3);
+@include lazy-menu (3,1.2,3);
+
+/*end of slide animation*/
+/*end of menu*/
 
 /*common to several element*/
 
@@ -170,8 +219,3 @@ footer nav {
 }
 
 /*end of footer*/
-
-/*slide*/
-@include lazy-menu (1,0,4);
-@include lazy-menu (2,0.6,3);
-@include lazy-menu (3,1.2,3);
