@@ -170,3 +170,8 @@ footer nav {
 }
 
 /*end of footer*/
+
+/*slide*/
+@include lazy-menu (1,0);
+@include lazy-menu (2,0.6);
+@include lazy-menu (3,1.2);
