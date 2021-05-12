@@ -1,196 +1,222 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <!--head-->
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta
-            name="description"
-            content="Ohmyfood des menus gastronomiques à commander en ligne pour ne plus devoir attendre au restaurant"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Oh my food</title>
-        <link rel="stylesheet" href="./assets/css/home.css" />
+  <!--head-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Ohmyfood des menus gastronomiques à commander en ligne pour ne plus devoir attendre au restaurant"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oh my food</title>
+    <link rel="stylesheet" href="./assets/css/home.css" />
     <!--end of head-->
-    </head>
-    <body>
+  </head>
+  <body>
     <!--body-->
-    
-        <!--spinner-->
 
-        <section id="spinner_loader">
-            <div class="container">
-                <div class="icone">
-                    <i class="fas fa-utensils"></i>
-                    <i class="fas fa-ice-cream"></i>
-                    <i class="fas fa-cheese"></i>
-                    <i class="fas fa-bacon"></i>
-                    <i class="fas fa-cocktail"></i>
-                </div>
-                <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
-                <div class="icone_2">
-                    <i class="fas fa-coffee"></i>
-                    <i class="fas fa-wine-bottle"></i>
-                    <i class="fas fa-glass-cheers"></i>
-                    <i class="fas fa-hamburger"></i>
-                </div>
-            </div>
-            </section>
-    
-            <!--spinner-->
-        <header>
-        <!--page header-->
-            <a href="./index.html">
-                <img 
-                    src="./assets/images/logo/ohmyfood@2x.svg"
-                    alt="Le logo Ohmyfood"
-                >
-            </a>
+    <!--spinner loading-->
+
+    <div id="spinner_loader">
+      <div class="container">
+        <div class="icone">
+          <i class="fas fa-utensils"></i>
+          <i class="fas fa-ice-cream"></i>
+          <i class="fas fa-cheese"></i>
+          <i class="fas fa-bacon"></i>
+          <i class="fas fa-cocktail"></i>
+        </div>
+        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" />
+        <div class="icone_2">
+          <i class="fas fa-coffee"></i>
+          <i class="fas fa-wine-bottle"></i>
+          <i class="fas fa-glass-cheers"></i>
+          <i class="fas fa-hamburger"></i>
+        </div>
+      </div>
+    </div>
+
+    <!--spinner loading-->
+
+    <header>
+      <!--page header-->
+      <a href="./index.html">
+        <img
+          src="./assets/images/logo/ohmyfood@2x.svg"
+          alt="Le logo Ohmyfood"
+        />
+      </a>
+      <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Paris, Belleville</p>
+      </div>
+      <!--end of page header-->
+    </header>
+
+    <main>
+      <!--main content-->
+      <section id="reservation">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>
+          Découvrez des restaurants d'exception, séléctionnés par nos soins.
+        </p>
+        <a class="btn" href="#restaurants">Explorer nos restaurants</a>
+      </section>
+      <section id="fonction">
+        <div>
+          <h3>Fonctionnement</h3>
+          <ol>
+            <li>
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-list"></i>
+                <p>Composez votre menu</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-store"></i>
+                <p>Degustez au restaurant</p>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="restaurants">
+        <div>
+          <h2>Restaurants</h2>
+          <article>
+            <figure>
+              <a href="./pages/la_palette_du_gout.html">
+                <img
+                  src="./assets/images/restaurants/La_palette_du_gout_4402w.jpg"
+                  alt="Assiete gastronomiques avec des mains et des couverts"
+                />
+                <span>Nouveau</span>
+              </a>
+            </figure>
             <div>
-                <i class="fas fa-map-marker-alt"></i><p>Paris, Belleville</p>
+              <a href="./pages/la_palette_du_gout.html">
+                <div>
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                </div>
+                <span class="animation-like">
+                  <i class="fas fa-heart"></i>
+                  <i class="far fa-heart"></i>
+                </span>
+              </a>
             </div>
-        <!--end of page header-->
-        </header>
-        <main>
-        <!--main content-->
-            <section id="reservation">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <a class="btn" href="#restaurants">Explorer nos restaurants</a>
-            </section>
-            <section id="fonction">
+          </article>
+          <article>
+            <figure>
+              <a href="./pages/la_note_enchantee.html">
+                <img
+                  src="./assets/images/restaurants/La_note_enchantee_3024w.jpg"
+                  alt="Assiette de boulettes de viandes et tomates"
+                />
+                <span>Nouveau</span>
+              </a>
+            </figure>
+            <div>
+              <a href="./pages/la_note_enchantee.html">
                 <div>
-                <h3>Fonctionnement</h3>
-                <ol>
-                  <li>
-                    <a href="#">
-                      <i class="fas fa-mobile-alt"></i>
-                      <p>Choisissez un restaurant</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fas fa-list"></i>
-                      <p>Composez votre menu</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fas fa-store"></i>
-                      <p>Degustez au restaurant</p>
-                    </a>
-                  </li>
-                </ol>
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
                 </div>
-            </section>
-            <section id="restaurants">
+                <span class="animation-like">
+                  <i class="fas fa-heart"></i>
+                  <i class="far fa-heart"></i>
+                </span>
+              </a>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <a href="./pages/a_la_francaise.html">
+                <img
+                  src="./assets/images/restaurants/A_la_francaise_3936w.jpg"
+                  alt="Assiette fantaisie en gros plan"
+                />
+              </a>
+            </figure>
+            <div>
+              <a href="./pages/a_la_francaise.html">
                 <div>
-                    <h2>Restaurants</h2>
-                        <article>
-                            <figure>
-                                <a href="./pages/la_palette_du_gout.html">
-                                    <img 
-                                        src="./assets/images/restaurants/La_palette_du_gout_4402w.jpg" 
-                                        alt="Assiete gastronomiques avec des mains et des couverts">
-                                    <span>Nouveau</span>
-                                </a>
-                            </figure>
-                                <div>
-                                    <a href="./pages/la_palette_du_gout.html">
-                                        <h3>La palette du goût</h3>
-                                        <p>Ménilmontant</p>
-                                        <!--add icône-->
-                                    </a> 
-                                </div>
-                        </article>
-                        <article>
-                            <figure>
-                                <a href="./pages/la_note_enchantee.html">
-                                    <img 
-                                        src="./assets/images/restaurants/La_note_enchantee_3024w.jpg" 
-                                        alt="Assiette de boulettes de viandes et tomates">
-                                    <span>Nouveau</span>
-                                </a>
-                            </figure>
-                                <div>
-                                    <a href="./pages/la_note_enchantee.html">
-                                        <h3>La note enchantée</h3>
-                                        <p>Charonne</p>
-                                        <!--add icône-->
-                                    </a>
-                                </div>
-                        </article>
-                        <article>
-                            <figure>
-                                <a href="./pages/a_la_francaise.html">
-                                    <img 
-                                        src="./assets/images/restaurants/A_la_francaise_3936w.jpg" 
-                                        alt="Assiette fantaisie en gros plan">
-                            </a>
-                            </figure>
-                                <div>
-                                    <a href="./pages/a_la_francaise.html">
-                                        <h3>À la française</h3>
-                                        <p>Cité Rouge</p>
-                                        <!--add icône-->
-                                    </a>
-                                </div>
-                        </article>
-                        <article>
-                            <figure>
-                                <a href="./pages/le_delice_des_sens.html">
-                                    <img 
-                                        src="./assets/images/restaurants/Le_delice_des_sens_5043w.jpg" 
-                                        alt="Assiette de poisson et ses petits légumes">
-                                </a>
-                            </figure>
-                                <div>
-                                    <a href="./pages/le_delice_des_sens.html">
-                                        <h3>Le délice des sens</h3>
-                                        <p>Folie-Méricourt</p>
-                                        <!--add icône-->
-                                    </a>
-                                </div>
-                        </article>
+                  <h3>À la française</h3>
+                  <p>Cité Rouge</p>
                 </div>
-            </section>     
-        <!--main content-->
-        </main>
-        <footer>
-        <!--footer-->
-            <nav>
-                <h3>Ohmyfood</h3>
-                    <ul>
-                        <li><a href="#">
-                            <i class="fas fa-utensils"></i>
-                            Proposer un restaurant
-                            </a>
-                        </li>
-                        <li><a href="#">
-                            <i class="fas fa-hands-helping"></i>
-                            Devenir partenaire
-                            </a>
-                        </li>
-                        <li><a href="#">
-                            Mentions légales
-                            </a>
-                        </li>
-                        <li><a href="mailto:contact@ohmyfood.fr">
-                            Contact
-                            </a>
-                        </li>
-                    </ul>
-            </nav>
-        <!--end of footer-->
-        </footer>
+                <span class="animation-like">
+                  <i class="fas fa-heart"></i>
+                  <i class="far fa-heart"></i>
+                </span>
+              </a>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <a href="./pages/le_delice_des_sens.html">
+                <img
+                  src="./assets/images/restaurants/Le_delice_des_sens_5043w.jpg"
+                  alt="Assiette de poisson et ses petits légumes"
+                />
+              </a>
+            </figure>
+            <div>
+              <a href="./pages/le_delice_des_sens.html">
+                <div>
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                </div>
+                <span class="animation-like">
+                  <i class="fas fa-heart"></i>
+                  <i class="far fa-heart"></i>
+                </span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!--main content-->
+    </main>
+
+    <footer>
+      <!--footer-->
+      <nav>
+        <h3>Ohmyfood</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-utensils"></i>
+              Proposer un restaurant
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-hands-helping"></i>
+              Devenir partenaire
+            </a>
+          </li>
+          <li><a href="#"> Mentions légales </a></li>
+          <li><a href="mailto:contact@ohmyfood.fr"> Contact </a></li>
+        </ul>
+      </nav>
+      <!--end of footer-->
+    </footer>
+
     <!--Kits fontawesome pour les icônes-->
     <script
       src="https://kit.fontawesome.com/3742821b69.js"
       crossorigin="anonymous"
     ></script>
     <!--Kits fontawesome pour les icônes-->
+
     <!--end of body-->
-    </body>
+  </body>
 </html>
-
-

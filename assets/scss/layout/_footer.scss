@@ -1,33 +1,33 @@
 footer {
-    background-color:$dark-grey;
+  background-color: $dark-grey;
 }
 footer nav {
-    @include dflex_col;
-    padding: 25px 15px;
-    @media only screen and (min-width:992px){
-        margin: 0 auto;
-        max-width: 1100px;
+  @include dflex_col;
+  padding: 25px 15px;
+  @media only screen and (min-width: 992px) {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+  h3 {
+    color: $white;
+    font-family: "Shrikhand";
+    font-weight: 500;
+    padding-bottom: 15px;
+    margin-left: 5px;
+  }
+  ul {
+    margin-left: 5px;
+    li {
+      padding-bottom: 8px;
+      a {
+        color: $white;
+      }
+      i {
+        color: $white;
+        font-size: 0.8em;
+        margin-right: 10px;
+        width: 1em;
+      }
     }
-        h3 {
-            color: $white;
-            font-family: 'Shrikhand';
-            font-weight: 500;
-            padding-bottom: 15px;
-            margin-left: 5px;
-        }
-                ul {
-                    margin-left: 5px;
-                    li {
-                        padding-bottom: 8px;
-                        a {
-                            color: $white;
-                        }
-                        i {
-                            color: $white;
-                            font-size: 0.8em;
-                            margin-right: 10px;
-                            width: 1em;
-                        }
-                    }
-                }
+  }
 }
