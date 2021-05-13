@@ -153,26 +153,30 @@ article {
     margin-left: 10px;
   }
   >div:nth-child(3) {
-    background-color: $light-green;
+    background-color: $tertiary-color;
     border-radius: 0 15px 15px 0;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 0px;
-    left: 80px;
+    left: 7px;
       i {
         color: white;
       }
   }
   &:hover div:nth-child(3) {
-    flex-basis: 80px;
+    flex-basis: 10%;
     display: flex;
-    left: 0px;
-    i {
-      transition: transform 0.5s linear;
+    left: 15px;
+    animation: check-menu 1s ease-out forwards;
+    transition-property: width;
 
-    }
+      i{
+        animation: check-rotate 0.5s ease both;
+        transition-duration: 2s
+
+      }
   }
 }
 /*slide animation*/

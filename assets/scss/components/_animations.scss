@@ -104,21 +104,20 @@
 /*end of slide*/
 /*check*/
 
-@keyframes check-menu {
+@keyframes check-rotate {
   0% {
-    transform: translateX(800px) rotate(360deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: translateX(0) rotate(0deg);
+    transform: rotate(0deg);
   }
 }
-
-@keyframes uncheck {
+@keyframes check-menu {
   0% {
-    transform: translateX(0) rotate(0deg);
+    transform: translateX(20px);
   }
   100% {
-    transform: translateX(800px) rotate(360deg);
+    transform: translateX(0px);
   }
 }
 /*end of check*/
