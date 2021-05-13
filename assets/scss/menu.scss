@@ -161,22 +161,24 @@ article {
     justify-content: center;
     align-items: center;
     width: 0px;
-    left: 7px;
+    left: 20px;
+    transition-property: width;
+    transition-duration: 0.7s;
       i {
         color: white;
+        animation: uncheck-rotate 0.7s ease forwards;
       }
   }
   &:hover div:nth-child(3) {
-    flex-basis: 10%;
     display: flex;
     left: 15px;
-    animation: check-menu 1s ease-out forwards;
+    display: flex;
+    width: 80px;
     transition-property: width;
+    transition-duration: 0.7s;
 
       i{
-        animation: check-rotate 0.5s ease both;
-        transition-duration: 2s
-
+        animation: check-rotate 0.7s ease forwards;
       }
   }
 }
