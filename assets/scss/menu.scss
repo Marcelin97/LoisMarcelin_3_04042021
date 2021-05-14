@@ -98,6 +98,8 @@ section {
     }
   }
 }
+
+/*article with check animation*/
 article {
   background-color: #fff;
   border-radius: 20px;
@@ -110,78 +112,79 @@ article {
   padding-right: 15px;
   position: relative;
   overflow: hidden;
-
-  div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    flex-basis: 100%;
-    h3 {
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex-basis: 100%;
+        h3 {
+          font-weight: bold;
+          font-size: 1.1em;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 100%;
+        }
+        p {
+          margin-top: 5px;
+          font-weight: 300;
+          font-size: 1em;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 100%;
+        }
+    }
+    > div:nth-child(2) {
+      /*price*/
+      margin-bottom: 20px;
+      top: 50px;
+      transform: translateY(60%);
+      width: 20px;
       font-weight: bold;
-      font-size: 1.1em;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 100%;
+      height: 80px;
     }
-    p {
-      margin-top: 5px;
-      font-weight: 100;
-      font-size: 1em;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 100%;
+        &:hover > div:nth-child(2) {
+          right: 10px;
+          margin-left: 10px;
+        }
+    >div:nth-child(3) {
+      background-color: $tertiary-color;
+      border-radius: 0 15px 15px 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0px;
+      left: 20px;
+      height: 80px;
+      transition-property: width;
+      transition-duration: 0.7s;
+        i {
+          color: white;
+          font-size: 1.5em;
+          animation: uncheck-rotate 0.7s ease forwards;
+        }
     }
-  }
-  > div:nth-child(2) {
-    /*price*/
-    margin-bottom: 20px;
-    position: relative;
-    top: 50px;
-    right: 15px;
-    width: 20px;
-    justify-content: flex-end;
-    font-weight: bold;
-  }
-  &:hover > div:nth-child(2) {
-    right: 10px;
-    margin-left: 10px;
-  }
-  >div:nth-child(3) {
-    background-color: $tertiary-color;
-    border-radius: 0 15px 15px 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 0px;
-    left: 20px;
-    transition-property: width;
-    transition-duration: 0.7s;
-      i {
-        color: white;
-        animation: uncheck-rotate 0.7s ease forwards;
-      }
-  }
-  &:hover div:nth-child(3) {
-    display: flex;
-    left: 15px;
-    display: flex;
-    width: 80px;
-    transition-property: width;
-    transition-duration: 0.7s;
-
-      i{
-        animation: check-rotate 0.7s ease forwards;
-      }
-  }
+          &:hover div:nth-child(3) {
+            display: flex;
+            left: 15px;
+            display: flex;
+            width: 80px;
+            transition-property: width;
+            transition-duration: 0.7s;
+              i{
+                animation: check-rotate 0.7s ease forwards;
+              }
+          }
 }
+
+/*end of article with check animation*/
 /*slide animation*/
 
 @include lazy-menu (1,0,4);
