@@ -142,15 +142,17 @@ article {
     }
     > div:nth-child(2) {
       /*price*/
-      margin-bottom: 20px;
+      padding: 0 10px 14px 0px;
       top: 50px;
-      transform: translateY(60%);
       width: 20px;
+      display: flex;
+      align-items: flex-end;
       font-weight: bold;
-      height: 80px;
+      height: 100%;
+      transition-property: width;
+      transition-duration: 3s;
     }
         &:hover > div:nth-child(2) {
-          right: 10px;
           margin-left: 10px;
         }
     >div:nth-child(3) {
