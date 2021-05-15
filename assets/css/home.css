@@ -231,14 +231,14 @@ section {
     border-radius: 10px; } }
 
 /*end of spinner loading*/
-/*heart*/
+/*heart home*/
 .animation-like {
-  position: relative; }
+  position: relative;
+  top: -50%; }
   .animation-like i {
     font-size: 2em;
     position: absolute;
     right: 10px;
-    top: 50%;
     transform: translateY(-50%); }
     .animation-like i:first-child {
       transform: scale(0) translateY(-50%);
@@ -257,7 +257,33 @@ section {
       transform: scale(0) translateY(-50%);
       transition: all 330ms ease-in-out; }
 
-/*end of heart*/
+/*end of heart home*/
+.animation-like-menu {
+  position: relative; }
+  .animation-like-menu i {
+    font-size: 2em;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); }
+    .animation-like-menu i:first-child {
+      transform: scale(0) translateY(-50%);
+      background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+      background-clip: border-box;
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      z-index: 1; }
+  .animation-like-menu:hover {
+    cursor: pointer; }
+    .animation-like-menu:hover i:first-child {
+      transform: scale(1) translateY(-50%);
+      transition: all 330ms ease-in-out; }
+    .animation-like-menu:hover i:last-child {
+      transform: scale(0) translateY(-50%);
+      transition: all 330ms ease-in-out; }
+
+/*end of heart menu*/
 /*slide*/
 @-webkit-keyframes slide-top {
   0% {
@@ -350,8 +376,8 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
-  -webkit-animation: hidden 4s ease-in-out forwards;
-          animation: hidden 4s ease-in-out forwards;
+  -webkit-animation: hidden 0s ease-in-out forwards;
+          animation: hidden 0s ease-in-out forwards;
   position: fixed;
   z-index: 9999;
   top: 0px;
