@@ -49,7 +49,6 @@ main {
         );
       }
     }
-
     img {
       object-fit: cover;
       width: 100%;
@@ -100,6 +99,7 @@ section {
 }
 
 /*article with check animation*/
+
 article {
   background-color: #fff;
   border-radius: 20px;
@@ -112,7 +112,7 @@ article {
   padding-right: 15px;
   position: relative;
   overflow: hidden;
-    div:first-child {
+    div:first-child {/*contient le H3 et P*/
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -140,8 +140,7 @@ article {
           width: 100%;
         }
     }
-    > div:nth-child(2) {
-      /*price*/
+    > div:nth-child(2) {/*prix*/
       padding: 0 10px 14px 0px;
       top: 50px;
       width: 20px;
@@ -149,13 +148,11 @@ article {
       align-items: flex-end;
       font-weight: bold;
       height: 100%;
-      transition-property: width;
-      transition-duration: 3s;
     }
-        &:hover > div:nth-child(2) {
+        &:hover > div:nth-child(2) {/*prix au survol*/
           margin-left: 10px;
         }
-    >div:nth-child(3) {
+    >div:nth-child(3) {/*check*/
       background-color: $tertiary-color;
       border-radius: 0 15px 15px 0;
       position: relative;
@@ -167,23 +164,22 @@ article {
       height: 80px;
       transition-property: width;
       transition-duration: 0.7s;
-        i {
+        i {/*icone du check*/
           color: white;
           font-size: 1.5em;
-          animation: uncheck-rotate 0.7s ease forwards;
         }
     }
-          &:hover div:nth-child(3) {
-            display: flex;
-            left: 15px;
-            display: flex;
-            width: 80px;
-            transition-property: width;
-            transition-duration: 0.7s;
-              i{
-                animation: check-rotate 0.7s ease forwards;
-              }
-          }
+    &:hover div:nth-child(3) {/*check au survol*/
+      display: flex;
+      left: 15px;
+      display: flex;
+      width: 80px;
+      transition-property: width;
+      transition-duration: 0.7s;
+        i{/*animation de l'icone du check*/
+          animation: check-rotate 0.7s ease forwards;
+        }
+    }
 }
 
 /*end of article with check animation*/
