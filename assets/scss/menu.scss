@@ -162,11 +162,11 @@ article {
       width: 0px;
       left: 20px;
       height: 80px;
-      transition-property: width;
-      transition-duration: 0.7s;
+      transition: width 0.7s;
         i {/*icone du check*/
           color: white;
           font-size: 1.5em;
+          animation: uncheck-rotate 0.7s ease forwards;
         }
     }
     &:hover div:nth-child(3) {/*check au survol*/
@@ -174,8 +174,8 @@ article {
       left: 15px;
       display: flex;
       width: 80px;
-      transition-property: width;
-      transition-duration: 0.7s;
+      transition: width 0.7s; 
+      height: 100%;
         i{/*animation de l'icone du check*/
           animation: check-rotate 0.7s ease forwards;
         }
