@@ -131,12 +131,14 @@ article {
           width: 100%;
         }
         p {
+          margin-top: 5px;
           font-weight: 300;
           font-size: 1em;
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
           width: 100%;
+          line-height: 1.1em;
         }
     }
     > div:nth-child(2) {/*prix*/
