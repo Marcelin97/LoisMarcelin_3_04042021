@@ -49,7 +49,6 @@ main {
         );
       }
     }
-
     img {
       object-fit: cover;
       width: 100%;
@@ -98,6 +97,9 @@ section {
     }
   }
 }
+
+/*article with check animation*/
+
 article {
   background-color: #fff;
   border-radius: 20px;
@@ -109,38 +111,87 @@ article {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    min-width: 0;
-    h3 {
+  overflow: hidden;
+    div:first-child {/*contient le H3 et P*/
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex-basis: 100%;
+        h3 {
+          font-weight: bold;
+          font-size: 1.1em;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 100%;
+        }
+        p {
+          margin-top: 5px;
+          font-weight: 300;
+          font-size: 1em;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 100%;
+          line-height: 1.1em;
+        }
+    }
+    > div:nth-child(2) {/*prix*/
+      padding: 0 10px 14px 0px;
+      top: 50px;
+      width: 20px;
+      display: flex;
+      align-items: flex-end;
       font-weight: bold;
-      font-size: 1.1em;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 100%;
+      height: 100%;
     }
-    p {
-      margin-top: 5px;
-      font-weight: 100;
-      font-size: 1em;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 100%;
+        &:hover > div:nth-child(2) {/*prix au survol*/
+          margin-left: 10px;
+        }
+    >div:nth-child(3) {/*check*/
+      background-color: $tertiary-color;
+      border-radius: 0 15px 15px 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0px;
+      left: 20px;
+      height: 80px;
+      transition: width 0.7s;
+        i {/*icone du check*/
+          color: white;
+          font-size: 1.5em;
+          animation: uncheck-rotate 0.7s ease forwards;
+        }
     }
-  }
-  span {
-    /*price*/
-    margin-bottom: 20px;
-    overflow: visible;
-    position: relative;
-    top: 50px;
-  }
+    &:hover div:nth-child(3) {/*check au survol*/
+      display: flex;
+      left: 15px;
+      display: flex;
+      width: 80px;
+      transition: width 0.7s; 
+      height: 100%;
+        i{/*animation de l'icone du check*/
+          animation: check-rotate 0.7s ease forwards;
+        }
+    }
 }
+
+/*end of article with check animation*/
+/*slide animation*/
+
+@include lazy-menu (1,0,4);
+@include lazy-menu (2,0.6,3);
+@include lazy-menu (3,1.2,3);
+
+/*end of slide animation*/
+/*end of menu*/
 
 /*common to several element*/
 
@@ -170,8 +221,3 @@ footer nav {
 }
 
 /*end of footer*/
-
-/*slide*/
-@include lazy-menu (1,0,4);
-@include lazy-menu (2,0.6,3);
-@include lazy-menu (3,1.2,3);

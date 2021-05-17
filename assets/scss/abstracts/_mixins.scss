@@ -1,7 +1,12 @@
+/*display:flex et flex-direction:column*/
+
 @mixin dflex_col {
   display: flex;
   flex-direction: column;
 }
+
+/*display:flex et flex-direction:column*/
+/*button*/
 
 @mixin buttons {
   background: linear-gradient(175deg, $secondary-color, $primary-color);
@@ -18,6 +23,10 @@
   min-width: 150px;
   margin: 0 auto;
 }
+
+/*end of button*/
+/*animation slide*/
+
 @mixin lazy-menu($j,$delay,$limit) {
   @for $i from 1 through $limit {
     #menu section:nth-of-type(#{$j}) article:nth-of-type(#{$i}) {
@@ -25,3 +34,5 @@
     }
   }
 }
+
+/*end of animation slide*/

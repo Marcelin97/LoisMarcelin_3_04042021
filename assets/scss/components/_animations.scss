@@ -1,5 +1,5 @@
 /*spinner loading*/
-/*la visibilité du spinner loading*/
+/*visibility du spinner loading*/
 
 @keyframes hidden {
   0% {
@@ -13,7 +13,9 @@
     visibility: hidden;
   }
 }
-/*apparition des bulles icones*/
+
+/*icon bubble*/
+
 @keyframes bubble {
   from {
     opacity: 1;
@@ -26,7 +28,8 @@
     color: $secondary-color;
   }
 }
-/*le logo Ohmyfood*/
+
+/*logo Ohmyfood*/
 @keyframes pulseBorder {
   0% {
     border: 2px double $primary-color;
@@ -42,10 +45,50 @@
   }
 }
 
-/*spinner loading*/
-/*heart*/
+/*end of spinner loading*/
+/*heart home*/
 
 .animation-like {
+  position: relative;
+  top: -50%;
+  i {
+    font-size: 2em;
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+
+    &:first-child {
+      transform: scale(0) translateY(-50%);
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#9356dc),
+        to(#ff79da)
+      );
+      background-clip: border-box;
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      z-index: 1;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    i:first-child {
+      transform: scale(1) translateY(-50%);
+      transition: all 330ms ease-in-out;
+    }
+    i:last-child {
+      transform: scale(0) translateY(-50%);
+      transition: all 330ms ease-in-out;
+    }
+  }
+}
+
+/*end of heart home*/
+.animation-like-menu {
   position: relative;
   i {
     font-size: 2em;
@@ -84,8 +127,9 @@
   }
 }
 
-/*end of heart*/
+/*end of heart menu*/
 /*slide*/
+
 @keyframes slide-top {
   0% {
     transform: translateY(40px);
@@ -96,3 +140,24 @@
     opacity: 1;
   }
 }
+
+/*end of slide*/
+/*check*/
+
+@keyframes check-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes uncheck-rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*end of check*/
