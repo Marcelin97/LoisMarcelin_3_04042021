@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box; /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/
+  scroll-behavior: smooth;
 }
 section {
   padding: 25px 15px;
