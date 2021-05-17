@@ -27,10 +27,10 @@
 /*end of button*/
 /*animation slide*/
 
-@mixin lazy-menu($j,$delay,$limit) {
+@mixin lazy-menu($j, $delay, $limit) {
   @for $i from 1 through $limit {
     #menu section:nth-of-type(#{$j}) article:nth-of-type(#{$i}) {
-      animation: slide-top 1s ease-out (0.2s*$i+$delay) both;
+      animation: slide-top 1s ease-out (0.2s * $i + $delay) both;
     }
   }
 }
