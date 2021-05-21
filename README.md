@@ -6,7 +6,7 @@
 
 > The goal was to integrate a mockup provided by a designer, using HTML and CSS **(and using SASS)** from scratch.
 
-> I had to develop a **100% mobile site** that lists the menus of gourmet restaurants.
+> I had to develop a *100% mobile site* that lists the menus of gourmet restaurants.
 
 ### REQUIREMENTS
 
