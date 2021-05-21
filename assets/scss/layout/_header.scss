@@ -1,6 +1,5 @@
 header {
-  display: flex;
-  flex-direction: column;
+  @include dflex_col;
   align-items: center;
   padding-top: 15px;
   background-color: white;
