@@ -16,8 +16,8 @@
 
 > We run **two command** for this project :
 
-* ► **npm run serve** ► **For development mode**. Once you run it, allows you to code in sass and see it in real time in your browser.
+* ► **npm run serve** ► **For development mode**. Compile SCSS to CSS not minified. When is runing, watch for SCSS update and recompile.
 
 (We run the command once and as soon as we change something in the scss the css code is recompiled)
 
-* ► **npm run start** ► **For production mode**. Compile your sass into a minified css.
+* ► **npm run start** ► **For production mode**. Compile SCSS into a minified css.
